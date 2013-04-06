@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://octopressvirtserblog.herokuapp.com/atom.xml" rel="self"/>
   <link href="http://octopressvirtserblog.herokuapp.com/"/>
-  <updated>2013-04-06T19:13:48+03:00</updated>
+  <updated>2013-04-06T21:32:24+03:00</updated>
   <id>http://octopressvirtserblog.herokuapp.com/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -22,12 +22,13 @@
 
 <p>It is supposed to be simple and easy to maintain. It supports markdown writing only, has no Admin UI and you have to commit changes to <a href="https://github.com/virtser/octopress">GitHub</a> in order to publish a new post. Lets see how it goes.</p>
 
-<p>I used to have sveral blogs in the past. One was a photography blog based on Wordpress, another photo blog in <a href="http://www.tumblr.com">Tumblr</a> and the last one based on BlogEngine.Net was my personal blog.</p>
+<p>I used to have sveral blogs in the past. One was a photography blog based on Wordpress, another photo blog in <a href="http://www.tumblr.com">Tumblr</a> and the last one based on BlogEngine.Net with some own custom modifications was my personal blog.</p>
 
 <p>All blogs I used to have, but photo blog, were in <em>Russian</em> only. It is my first attempt to write a blog in <em>English</em>. It supposed to server all my <em>English</em>, <em>Russian</em> and <em>Hebrew</em> speaking friends.</p>
 
-<p>I have to stop talking to myself as nobody read first blog posts&#8230;<br/>
-If you still read this, let me know in comments. ;)</p>
+<p>I&#8217;m going to write here about the things that interest me and may be interesting to read for others as well. Sometimes I&#8217;m going to share my knowledge and sometimes to get your opinion. It is important for me to get feedback, so if you read a post and you care or have something to say about, please comment.</p>
+
+<p>I have to stop talking to myself as nobody read first blog posts&#8230;  :)</p>
 ]]></content>
   </entry>
   

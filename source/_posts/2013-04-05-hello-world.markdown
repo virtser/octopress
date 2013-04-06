@@ -10,11 +10,10 @@ This is a very first post in my new minimalistic geek blog based on [Octopress](
 
 It is supposed to be simple and easy to maintain. It supports markdown writing only, has no Admin UI and you have to commit changes to [GitHub](https://github.com/virtser/octopress) in order to publish a new post. Lets see how it goes.
 
-I used to have sveral blogs in the past. One was a photography blog based on Wordpress, another photo blog in [Tumblr](http://www.tumblr.com) and the last one based on BlogEngine.Net was my personal blog. 
+I used to have sveral blogs in the past. One was a photography blog based on Wordpress, another photo blog in [Tumblr](http://www.tumblr.com) and the last one based on BlogEngine.Net with some own custom modifications was my personal blog. 
 
 All blogs I used to have, but photo blog, were in *Russian* only. It is my first attempt to write a blog in *English*. It supposed to server all my *English*, *Russian* and *Hebrew* speaking friends.
 
+I'm going to write here about the things that interest me and may be interesting to read for others as well. Sometimes I'm going to share my knowledge and sometimes to get your opinion. It is important for me to get feedback, so if you read a post and you care or have something to say about, please comment.
 
-I have to stop talking to myself as nobody read first blog posts...  
-If you still read this, let me know in comments. ;)
-
+I have to stop talking to myself as nobody read first blog posts...  :)
