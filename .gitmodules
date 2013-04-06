@@ -5,3 +5,8 @@
 [submodule ".themes/villainy"]
 	path = .themes/villainy
 	url = git://github.com/mikeclarke/villainy-octopress-theme.git
+
+[submodule ".themes/greyshade"]
+	path = .themes/greyshade
+	url = git://github.com/shashankmehta/greyshade.git
+	
