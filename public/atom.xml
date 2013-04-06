@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[David Virtser]]></title>
+  <link href="http://octopressvirtserblog.herokuapp.com/atom.xml" rel="self"/>
+  <link href="http://octopressvirtserblog.herokuapp.com/"/>
+  <updated>2013-04-06T17:46:19+03:00</updated>
+  <id>http://octopressvirtserblog.herokuapp.com/</id>
+  <author>
+    <name><![CDATA[David Virtser]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://octopressvirtserblog.herokuapp.com/blog/2013/04/05/hello-world/"/>
+    <updated>2013-04-05T14:13:00+03:00</updated>
+    <id>http://octopressvirtserblog.herokuapp.com/blog/2013/04/05/hello-world</id>
+    <content type="html"><![CDATA[<p>This is a very first post in my new minimalistic geek blog based on <a href="https://github.com/imathis/octopress">Octopress</a> framework for <a href="https://github.com/mojombo/jekyll">Jekyll</a> blogging.</p>
+
+<p>It is supposed to be simple and easy to maintain. It supports markdown writing only, has no Admin UI and you have to commit changes to GitHub in order to publish a new post. Lets see how it goes.</p>
+
+<p>I have to stop talking to myself as nobody read first blog posts&#8230;<br/>
+If you still read this, let me know in comments. ;)</p>
+]]></content>
+  </entry>
+  
+</feed>
