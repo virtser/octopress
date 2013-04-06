@@ -1,3 +1,7 @@
 [submodule ".themes/light"]
 	path = .themes/light
 	url = git://github.com/octopress-themes/classic-light.git
+
+[submodule ".themes/villainy"]
+	path = .themes/villainy
+	url = git://github.com/mikeclarke/villainy-octopress-theme.git
