@@ -1,23 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://octopressvirtserblog.herokuapp.com/blog/2013/04/05/hello-world/</loc>
+        <loc>http://virtser.net/blog/2013/04/05/hello-world/</loc>
         <lastmod>2013-04-06T21:36:46+03:00</lastmod>
     </url>
     <url>
-        <loc>http://octopressvirtserblog.herokuapp.com/about/</loc>
+        <loc>http://virtser.net/404.html</loc>
+        <lastmod>2013-04-07T23:50:42+03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://virtser.net/about/</loc>
         <lastmod>2013-04-07T20:48:08+03:00</lastmod>
     </url>
     <url>
-        <loc>http://octopressvirtserblog.herokuapp.com/blog/archives/</loc>
+        <loc>http://virtser.net/blog/archives/</loc>
         <lastmod>2013-04-06T21:36:46+03:00</lastmod>
     </url>
     <url>
-        <loc>http://octopressvirtserblog.herokuapp.com/</loc>
+        <loc>http://virtser.net/</loc>
         <lastmod>2013-04-07T21:21:14+03:00</lastmod>
     </url>
     <url>
-        <loc>http://octopressvirtserblog.herokuapp.com/robots.txt</loc>
+        <loc>http://virtser.net/robots.txt</loc>
         <lastmod>2013-04-06T15:30:01+03:00</lastmod>
     </url>
 </urlset>
