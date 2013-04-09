@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://virtser.net/blog/2013/04/05/hello-world/</loc>
+        <loc>http://virtser.net/2013/04/05/hello-world/</loc>
         <lastmod>2013-04-09T21:04:02+03:00</lastmod>
     </url>
     <url>
@@ -13,7 +13,7 @@
         <lastmod>2013-04-07T20:48:08+03:00</lastmod>
     </url>
     <url>
-        <loc>http://virtser.net/blog/archives/</loc>
+        <loc>http://virtser.net/archives/</loc>
         <lastmod>2013-04-09T21:04:02+03:00</lastmod>
     </url>
     <url>
