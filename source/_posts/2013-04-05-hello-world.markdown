@@ -8,7 +8,8 @@ categories:
 
 This is a very first post in my new minimalistic geek blog based on [Octopress](https://github.com/imathis/octopress) framework for [Jekyll](https://github.com/mojombo/jekyll) blogging. 
 
-It is supposed to be simple and easy to maintain. It supports [markdown](http://en.wikipedia.org/wiki/Markdown) writing only, has no Admin section and you have to commit changes to [GitHub](https://github.com/virtser/octopress) in order to publish a new post. Lets see how it goes.
+It is supposed to be simple and easy to maintain. It supports [markdown](http://en.wikipedia.org/wiki/Markdown) writing only, has no Admin section and you have to commit changes to [GitHub](https://github.com/virtser/octopress) in order to publish a new post. So if I make a spelling mistake or type, you can fork the repository, fix it and make a pull request. ;)
+
 
 I used to have several blogs in the past. One was a photography blog based on Wordpress, another photo blog in [Tumblr](http://www.tumblr.com) and the last one based on BlogEngine.Net with some own custom modifications was my personal blog. 
 
