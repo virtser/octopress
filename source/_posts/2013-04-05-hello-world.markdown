@@ -8,12 +8,12 @@ categories:
 
 This is a very first post in my new minimalistic geek blog based on [Octopress](https://github.com/imathis/octopress) framework for [Jekyll](https://github.com/mojombo/jekyll) blogging. 
 
-It is supposed to be simple and easy to maintain. It supports markdown writing only, has no Admin UI and you have to commit changes to [GitHub](https://github.com/virtser/octopress) in order to publish a new post. Lets see how it goes.
+It is supposed to be simple and easy to maintain. It supports [markdown](http://en.wikipedia.org/wiki/Markdown) writing only, has no Admin section and you have to commit changes to [GitHub](https://github.com/virtser/octopress) in order to publish a new post. Lets see how it goes.
 
-I used to have sveral blogs in the past. One was a photography blog based on Wordpress, another photo blog in [Tumblr](http://www.tumblr.com) and the last one based on BlogEngine.Net with some own custom modifications was my personal blog. 
+I used to have several blogs in the past. One was a photography blog based on Wordpress, another photo blog in [Tumblr](http://www.tumblr.com) and the last one based on BlogEngine.Net with some own custom modifications was my personal blog. 
 
-All blogs I used to have, but photo blog, were in *Russian* only. It is my first attempt to write a blog in *English*. It supposed to server all my *English*, *Russian* and *Hebrew* speaking friends.
+All blogs I used to have, were in *Russian* only. It is my first attempt to write a blog in *English*. It supposed to serve all my *English*, *Russian* and *Hebrew* speaking friends.
 
-I'm going to write here about the things that interest me and may be interesting to read for others as well. Sometimes I'm going to share my knowledge and sometimes to get your opinion. It is important for me to get feedback, so if you read a post and you care or have something to say about, please comment.
+I'm going to write here about the things that interest me and may be interesting to read for others as well. I'm going to share here stuff related to my workplace or hobbies. It is important for me to get feedback. So if you read a post and you care or have something to say about it, please comment or share with others.
 
 I have to stop talking to myself as nobody read first blog posts...  :)
