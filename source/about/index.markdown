@@ -2,9 +2,9 @@
 layout: page
 title: "About me"
 date: 2012-07-24 03:16
-comments: false
+comments: true
 sharing: false
-footer: false
+footer: true
 ---
 
 I work in [eToro](http://etoro.com) as Infrastructure manaer, managing number of R&D teams (web developer at my past). We are building the social investment network called [Openbook](http://openbook.etoro.com) which supposed to help people invest their money smartly. Working there is challenging, eToro is developing, we need to think scale.
