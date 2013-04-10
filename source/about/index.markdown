@@ -15,4 +15,4 @@ I'm a tech junkie. Actively following Twitter, reading RSS feeds on daily basis,
 
 I'm married and have two wonderful boys that keep me busy. Currently live in *Tel-Aviv* (Israel). Born and raised in *Moscow* (Russia). Speak: Hebrew, Russian and English.
 
-If you want to contact me, [follow](http://twitter.com/poison_dv) my Twitter or email: *david.virtser@gmail.com*
+If you want to contact me, [follow](http://twitter.com/poison_dv) my Twitter or email: *david.virtser @ gmail.com*
