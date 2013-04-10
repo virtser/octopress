@@ -14,6 +14,6 @@ I used to have several blogs in the past. One was a photography blog based on Wo
 
 All blogs I used to have, were in *Russian* only. It is my first attempt to write a blog in *English*. It supposed to serve all my *English*, *Russian* and *Hebrew* speaking friends.
 
-I'm going to write here about the things that interest me and may be interesting to read for others as well. I'm going to share here stuff related to my workplace or hobbies. It is important for me to get feedback. So if you read a post and you care or have something to say about it, please comment or share with others.
+I'm going to write here about the things that interest me and may be interesting to read for others as well. I'm going to share here stuff related to my workplace and hobbies. It is important for me to get feedback. So if you read a post and you care or have something to say about it, please comment or share with others. You can also subscribe to this blog [RSS feed](http://feeds.feedburner.com/poisonsblog) to get updates.
 
 I have to stop talking to myself as nobody read first blog posts...  :)
