@@ -1,1 +1,1 @@
-My personal blog [virtser.net](http://virtser.net)
+My personal blog: [virtser.net](http://virtser.net)
