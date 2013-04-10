@@ -7,7 +7,7 @@ sharing: false
 footer: true
 ---
 
-I work in [eToro](http://etoro.com) as Infrastructure manaer, managing number of R&D teams (web developer at my past). We are building the social investment network called [Openbook](http://openbook.etoro.com) which supposed to help people invest their money smartly. Working there is challenging, eToro is developing, we need to think scale.
+I work in [eToro](http://etoro.com) as Infrastructure manager, managing number of R&D teams (web developer at my past). We are building the social investment network called [Openbook](http://openbook.etoro.com) which supposed to help people invest their money smartly. Working there is challenging, eToro is developing, we need to think scale.
 
 I'm an enthusiast photographer. I have started my photography hobby about 10 years ago. I shoot mostly landscape and street photography. You can find my photos at [500px](http://500px.com/virtser) or on my [flickr](http://www.flickr.com/photos/poison-dv/) page. 
 
