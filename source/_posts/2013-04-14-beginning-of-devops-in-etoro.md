@@ -6,7 +6,8 @@ comments: true
 published: false
 ---
 
-With this post I'm starting a series of DevOps related posts. The past, the present and the feature of DevOps in eToro.
+With this post I'm starting a series of DevOps related posts. The past, the present and the future of DevOps in eToro.
 
 ##The Past##
-Unfortunately we didn't invest in anything related to DevOps in eToro for about first 5 years.
+Unfortunately we didn't invest enough or not at all in our past in anything related to DevOps in eToro for about first 5 years. Now we eat our own dust
+
