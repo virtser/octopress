@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What is DevOps and how does it help me?"
+title: "What is DevOps and how does it help us?"
 date: 2013-04-14 20:40
 comments: true
 published: false
