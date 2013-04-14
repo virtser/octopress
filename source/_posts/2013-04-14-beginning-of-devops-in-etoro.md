@@ -6,5 +6,4 @@ comments: true
 published: false
 ---
 
-What is DevOps
-We didn't invest
+Unfortunately we didn't invest in anything related to DevOps in eToro for about first 5 years. 
