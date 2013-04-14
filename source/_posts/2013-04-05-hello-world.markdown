@@ -3,6 +3,7 @@ layout: post
 title: "Hello World"
 date: 2013-04-05 14:13
 comments: true
+published: true
 ---
 
 This is a very first post in my new minimalistic geek blog based on [Octopress](https://github.com/imathis/octopress) framework for [Jekyll](https://github.com/mojombo/jekyll) blogging. 
