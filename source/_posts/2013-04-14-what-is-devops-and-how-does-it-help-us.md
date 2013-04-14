@@ -16,11 +16,17 @@ A formal definition taken from Wikipedia[^footnote]:
 
 > DevOps (a portmanteau of development and operations) is a software development method that stresses communication, collaboration and integration between software developers and information technology (IT) professionals. DevOps is a response to the interdependence of software development and IT operations. It aims to help an organization rapidly produce software products and services.
 
-I'm not going to write here much again about DevOps as I you can just find below my short DevOps high-level presentation that I created and presented internally for [eToro] R&D employees last week:
+I'm not going to write here much again about DevOps as you can just find below my short DevOps high-level presentation that I created and presented internally for [eToro] R&D employees last week:
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/18801475" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
 
-Here us [another](http://www.slideshare.net/geekle/devops-5348895), more in depth,  Devops presentation found in Internet.
+Hope you could understand from this presentation what is DevOps and what does it  suppose to give us after implementation. 
+
+We have a very long way until it's going to be implemented, but we are on the right path. 
+
+As one of the veterans, in the next post I'm going to describe in more details about [eToro] past and how everything has started.
+
+Keep on reading and as always, I will be glad to get your feedback. ;)
 
 [^footnote]: [DevOps page](http://en.wikipedia.org/wiki/DevOps) on Wikipedia. 
 
