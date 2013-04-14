@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2013-04-14T22:48:09+03:00</updated>
+  <updated>2013-04-14T22:50:54+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,62 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Beginning of DevOps in eToro]]></title>
-    <link href="http://virtser.net/2013/04/25/beginning-of-devops-in-etoro/"/>
-    <updated>2013-04-25T20:40:00+03:00</updated>
-    <id>http://virtser.net/2013/04/25/beginning-of-devops-in-etoro</id>
-    <content type="html"><![CDATA[<p>With this post I&#8217;m starting a series of DevOps related posts. What is it, the past, the present and the future of DevOps in eToro R&amp;D.</p>
-
-<h2>The Past</h2>
-
-<p>Unfortunately we didn&#8217;t invest enough or not at all in anything related to DevOps in eToro for about first 5 years. As typical startup we didn&#8217;t have enough time (netiher understanding) to think about our own scalability as an organization.</p>
-
-<p>We grew pretty fast</p>
-
-<h2>The Present</h2>
-
-<p>Beginning of DevOps
-Hackathon
-DevOps forum
-Freestyle Tuesdays - logs, debugging, lectures, unit test, devops, automation</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[What is DevOps and how does it help us?]]></title>
-    <link href="http://virtser.net/2013/04/14/what-is-devops-and-how-does-it-help-us/"/>
-    <updated>2013-04-14T20:40:00+03:00</updated>
-    <id>http://virtser.net/2013/04/14/what-is-devops-and-how-does-it-help-us</id>
-    <content type="html"><![CDATA[<p>With this post I&#8217;m starting a series of DevOps related posts. What is it, the past, the present and the future of DevOps in <a href="http://etoro.com">eToro</a> R&amp;D.</p>
-
-<p>Lets start with basics and then drill down and expand to more details.</p>
-
-<h2>What is DevOps?</h2>
-
-<p>A formal definition taken from <a href="http://en.wikipedia.org/wiki/DevOps">Wikipedia</a>:</p>
-
-<blockquote><p>DevOps (a portmanteau of development and operations) is a software development method that stresses communication, collaboration and integration between software developers and information technology (IT) professionals. DevOps is a response to the interdependence of software development and IT operations. It aims to help an organization rapidly produce software products and services.</p></blockquote>
-
-<p>Although it is a fine but &#8220;dry&#8221; definition, I like the more simple one found in <a href="http://www.slideshare.net/geekle/devops-5348895">this</a> presentation online:</p>
-
-<blockquote><p><strong>D</strong>ev<strong>O</strong>ps is an approach to bridge the gap between agile software <strong>D</strong>evelopment and <strong>O</strong>perations (IT).</p></blockquote>
-
-<p>I&#8217;m not going to write here anymore about DevOps as you can just find below my short DevOps high-level presentation that I wrote and presented internally for <a href="http://etoro.com">eToro</a> R&amp;D employees last week:</p>
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/18801475" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
-
-
-<p>Hope you could understand from this presentation what is DevOps in general and what does it suppose to give us after implementation.</p>
-
-<p>We have a very long way until it&#8217;s going to be implemented, but we are on the right path.</p>
-
-<p>In the next post I&#8217;m going to describe in more details about <a href="http://etoro.com">eToro</a> past and how everything has started.</p>
-
-<p>Keep on reading and as always, I will be glad to get your feedback. ;)</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
