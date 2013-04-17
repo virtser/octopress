@@ -2,6 +2,7 @@
 layout: nil
 ---
 User-agent: *
-Disallow: 
+Disallow: /404.html
+Disallow: /blog/
 
 Sitemap: {{ site.url }}/sitemap.xml 
