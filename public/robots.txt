@@ -1,5 +1,5 @@
 User-agent: *
+Sitemap: http://virtser.net/sitemap.xml
 Disallow: /404.html
 Disallow: /blog/
 
-Sitemap: http://virtser.net/sitemap.xml 
