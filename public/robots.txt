@@ -1,4 +1,5 @@
 User-agent: *
-Disallow: 
+Disallow: /404.html
+Disallow: /blog/
 
 Sitemap: http://virtser.net/sitemap.xml 
