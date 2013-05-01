@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2013-04-30T06:53:41+03:00</updated>
+  <updated>2013-05-01T07:27:41+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,21 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[History of development process in eToro]]></title>
-    <link href="http://virtser.net/2013/04/27/history-of-development-process-in-etoro/"/>
-    <updated>2013-04-27T18:02:00+03:00</updated>
-    <id>http://virtser.net/2013/04/27/history-of-development-process-in-etoro</id>
-    <content type="html"><![CDATA[<p>It&#8217;s all started, at least for me, about 6 years ago (at 2008). We were very few developers in a fresh new startup company.
-And as any typical Israeli startup company of these years our focus was to build and deliver our products as fast as possible.</p>
-
-<p>There were about 5 developers when each was responsible to cover products in multiple fields. As web developer I was responsible
-to build and maintain company websites, Affiliates system and Billing front end. In the first year the development process was
-almost unmanaged. We got requirements and requests for features development by email or on a short meeting. We had no revision
-control system, neither bug tracking system. And it all worked fine, as soon as we were a small team.</p>
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[What is DevOps and how does it help us?]]></title>
