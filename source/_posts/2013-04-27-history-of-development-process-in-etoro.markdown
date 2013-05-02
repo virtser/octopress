@@ -3,7 +3,7 @@ layout: post
 title: "History of development process in eToro"
 date: 2013-05-01 08:02
 comments: true
-published: true
+published: false
 ---
 ![First eToro logo - 2007](/images/etoro_logo.jpg)
 
