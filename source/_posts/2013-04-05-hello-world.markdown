@@ -10,7 +10,6 @@ This is a very first post in my new minimalistic geek blog based on [Octopress](
 
 It is supposed to be simple and easy to maintain. It supports [markdown](http://en.wikipedia.org/wiki/Markdown) writing only, has no Admin section and you have to commit changes to [GitHub](https://github.com/virtser/octopress) in order to publish a new post. So if I make a spelling mistake or type, you can fork the repository, fix it and make a pull request. ;)
 
-
 I used to have several blogs in the past. One was a photography blog based on Wordpress, another photo blog in [Tumblr](http://www.tumblr.com) and the last one based on BlogEngine.Net with some own custom modifications was my personal blog. 
 
 All blogs I used to have, were in *Russian* only. It is my first attempt to write a blog in *English*. It supposed to serve all my *English*, *Russian* and *Hebrew* speaking friends.
