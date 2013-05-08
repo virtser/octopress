@@ -34,5 +34,8 @@ We feel that we are not scalable internally. We afraid to recruit another team m
 
 It is a heavy and slow machine which can hardly move...
 
+P.S.
+Next post will be optimistic. ;)
+
 
 [eToro]: http://www.etoro.com
