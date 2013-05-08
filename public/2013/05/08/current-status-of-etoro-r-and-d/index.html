@@ -1,0 +1,183 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Current status of eToro R&amp;D - David Virtser</title>
+	<meta name="author" content="David Virtser">
+
+	
+	<meta name="description" content="May 8th, 2013 Current Status of eToro R&amp;D When I refer to current R&amp;D status, I refer to the situation which was relevant for about 3 months &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="http://feeds.feedburner.com/poisonsblog" rel="alternate" title="David Virtser" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://virtser.net/2013/05/08/current-status-of-etoro-r-and-d/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		document.write("<a href='/'><img src='http://www.gravatar.com/avatar/" + MD5("poison77@gmail.com") + "?s=160' alt='David Virtser' style='width: 160px;' /></a>");
+	</script>
+</div>
+<h1><a href="/">David Virtser</a></h1>
+<p class="subtitle"></p>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/about">About me</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/poison_dv" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/virtser" title="GitHub">GitHub</a>
+		
+		
+		<a class="linkedin" href="http://www.linkedin.com/in/virtser">LinkedIn</a>
+		
+		
+		
+		
+		
+		<a class="rss" href="http://feeds.feedburner.com/poisonsblog" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-08T22:35:00+03:00" data-updated="true" itemprop="datePublished">May 8<span>th</span>, 2013</time></div>
+	</div>
+	<h1 class="title" itemprop="name">Current Status of eToro R&amp;D</h1>
+	<div class="entry-content" itemprop="articleBody"><p><img src="/images/eToro.jpg" alt="" /></p>
+
+<p>When I refer to current R&amp;D status, I refer to the situation which was relevant for about 3 months ago. Not that today it is very  different, but what started in <a href="http://www.etoro.com">eToro</a> 3 months ago I&#8217;m going to call the future of <a href="http://www.etoro.com">eToro</a> R&amp;D. And I&#8217;m going to cover it in next  post.</p>
+
+<p>Anyway, lets talk about the current R&amp;D status. We are big and we are getting bigger all the time. We are about 70 employees in R&amp;D (including developers, QA, DBAs and IT).</p>
+
+<p>We have migrated from SVN to Mercurial revision control system. SVN was really bad with dealing with branch merges. Openbook was a big team of 8 people and it was impossible to continue with SVN. We wanted to work using <a href="http://nvie.com/posts/a-successful-git-branching-model/">feature branch model</a>. Our only two candidates were Git and Mercurial, both are very similar and fit our needs. We chose Mercurial because we are using <a href="http://www.fogcreek.com/fogbugz/">FogBugz</a> as our bug tracking system and FogCreek released <a href="http://www.fogcreek.com/kiln/">Kiln</a>, a Mercurial server which has a tight integration with FogBugz.</p>
+
+<p>Shared static environments problems is a daily talk and everybody knows that dealing with configuration changes or fixing a broken environment can take hours, sometimes days. There is no integration environment where we can test cross R&amp;D developments. We have to work in the office, because we are dependant in our network, we have no mocks.</p>
+
+<p>We have a lot of dependencies, we wait for QA to finish, we wait for DBA to write the script, we wait for IT to deploy application, we wait for IT to see our logs in production in case of troubleshooting. We are doing blocking development.</p>
+
+<p>We have sort of monitoring in production using <a href="https://logentries.com/">LogEntries</a> and <a href="http://newrelic.com/">New Relic</a> which gives us more information, but we still can&#8217;t find the source of the problem when we have crisis.</p>
+
+<p>In the past year we slowly started to learn and implement Test Driven Development process in few teams, writing unit tests. Still not enough, product can hardly understand/feel the impact of these tests. Same goes with peer code reviews. We have no test automation at all, our manual regression test takes 3 days of 2 QA people.</p>
+
+<p>About a year ago we recruited configuration manager who started with build automation in teams. Nowadays most of the projects are built automatically. Deployments are still done manually to all environments.</p>
+
+<p>We have no performance test lab, but we already starting to feel the impact of customers growth in production. All the problems are found in productions.</p>
+
+<p>We have very few DBs, some are really big with a lot of shared objects, no APIs on shared objects. We have no scripts to create clean DB with just the schema. Our DBs should be separated to small DBs. DB revision control is awkward.</p>
+
+<p>In the last year we made a transition in most of the teams from Waterfall to Agile software development methodology. It gave us a new breath, short releases (once in 2-3 weeks), more visibility of the process, tools to measure the process and get improved. From other hand it also emphasized our downsides, our dependencies, risks we take. It is still hard to manage it, we have delays in iterations, we commit to stories which we don&#8217;t deliver and we deliver stories which we didn&#8217;t commit to.</p>
+
+<p>We feel that we are not scalable internally. We afraid to recruit another team member, because it won&#8217;t increase our performance, it will decrease it and I was able to prove that.</p>
+
+<p>It is a heavy and slow machine which can hardly move&#8230;</p>
+</div>
+
+</article>
+
+	
+
+
+<section id="comment">
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+			</div>
+			<footer id="footer" class="inner"></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'virtserdavid';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://virtser.net/2013/05/08/current-status-of-etoro-r-and-d/';
+        var disqus_url = 'http://virtser.net/2013/05/08/current-status-of-etoro-r-and-d/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29241929-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+		</div>
+	</div>
+</body>
+</html>
