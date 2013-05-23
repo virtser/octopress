@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2013-05-09T00:18:13+03:00</updated>
+  <updated>2013-05-23T05:54:36+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Future of eToro R&amp;D]]></title>
+    <link href="http://virtser.net/2013/05/23/future-of-etoro-r-and-d/"/>
+    <updated>2013-05-23T20:03:00+03:00</updated>
+    <id>http://virtser.net/2013/05/23/future-of-etoro-r-and-d</id>
+    <content type="html"><![CDATA[<p><img src="http://virtser.net/images/EToro_logo_facebook_profile.jpg" alt="" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Current status of eToro R&amp;D]]></title>
