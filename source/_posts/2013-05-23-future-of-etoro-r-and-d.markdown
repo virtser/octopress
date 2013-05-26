@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Future of eToro R&amp;D"
-date: 2013-05-23 20:03
+date: 2013-05-26 23:03
 comments: true
-published: false
+published: true
 ---
 
 ![](/images/EToro_logo_facebook_profile.jpg)
