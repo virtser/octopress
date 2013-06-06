@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2013-06-06T20:23:15+03:00</updated>
+  <updated>2013-06-06T22:28:09+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -30,6 +30,9 @@
 
 
 <p>All the credits for the presentation goes to Omry Hay, for design to <a href="http://gal-segal.net">Gal Segal</a> &amp; Shlomi Shemesh and for implementation to Shomi Shemesh, the one and only!</p>
+
+<p>P.S.
+If you are interested we can open source this Node.js SEO solution. Let me know in comments.</p>
 ]]></content>
   </entry>
   

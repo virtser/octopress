@@ -18,4 +18,7 @@ Find below the presentation explaining our solution:
 
 All the credits for the presentation goes to Omry Hay, for design to [Gal Segal](http://gal-segal.net) & Shlomi Shemesh and for implementation to Shomi Shemesh, the one and only!
 
+P.S.
+If you are interested we can open source this Node.js SEO solution. Let me know in comments.
+
 [Openbook]: https://openbook.etoro.com
