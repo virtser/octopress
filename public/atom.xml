@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2013-05-29T21:41:44+03:00</updated>
+  <updated>2013-06-06T20:23:15+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[eToro Openbook SEO Implementation]]></title>
+    <link href="http://virtser.net/2013/06/06/etoro-openbook-seo/"/>
+    <updated>2013-06-06T20:05:00+03:00</updated>
+    <id>http://virtser.net/2013/06/06/etoro-openbook-seo</id>
+    <content type="html"><![CDATA[<p>Sometimes in eToro we are doing really innovative and beautiful things.</p>
+
+<p>In our <a href="https://openbook.etoro.com">Openbook</a> web application most of the calls are executed on client side using Ajax. Which means that our pages content is  changing dynamically. Google bots can index static content pages only.</p>
+
+<p>It was a challenge to find a good and easy to implement solution which required minimum of changes on <a href="https://openbook.etoro.com">Openbook</a> itslef.</p>
+
+<p>Find below the presentation explaining our solution:</p>
+
+<iframe src="http://prezi.com/embed/8jncrjqi204a/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="600" height="400" frameBorder="0"></iframe>
+
+
+<p>All the credits for the presentation goes to Omry Hay, for design to <a href="http://gal-segal.net">Gal Segal</a> &amp; Shlomi Shemesh and for implementation to Shomi Shemesh, the one and only!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[eToro is looking for DevOps engineers]]></title>
