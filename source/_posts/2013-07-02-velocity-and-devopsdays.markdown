@@ -15,7 +15,7 @@ We spent 2 days in San Francisco just traveling for pleasure,  followed by 4 int
 
 The conferences were different, but both very good. The reason I go there was to learn more about DevOps culture from experience of real companies and people who do it in modern web industry. Companies like Facebook, Twitter, Google, Netflix and others.
 
-Few points that I marked to myself and were repeated over and over again on number of different sessions which are important for a  company to be Agile/Lean:
+Few insights that I marked to myself and were repeated over and over again on number of different sessions which are important for a company to be Agile/Lean:
 
 1. **Make a focus** - Great companies do one product, but do it outstanding. They focus on their product whole holistic experience - how it looks, how it feels, how responsive is it, how reliable is it, how easy is it, how intuitive is it, how much time does it take to get an answer from customer support and etc… They invest most of the time in robust and scalable infrastructure, in performance of the applications, in fixing bugs, optimizing and analyzing.
  
