@@ -9,7 +9,7 @@ Well, it took me a while to get back to life after a huge jet lag hit me badly. 
 
 I'm back from 10 days business and pleasure trip to Bay Area - San Francisco, Santa Clara, Mountain View, Paulo Alto, Cupertino, Saratoga (AKA Silicon Valley), San Jose and Santa Cruz. Here is a classic postcard picture I took in San Francisco:
 
-![Golden Gate Bridge](http://farm8.staticflickr.com/7294/9138679173_f71502b827_b.jpg)
+![Golden Gate Bridge © David Virtser](http://farm8.staticflickr.com/7294/9138679173_f71502b827_b.jpg)
 
 We spent 2 days in San Francisco just traveling for pleasure,  followed by 4 intensive days of [Velocity](http://velocityconf.com/velocity2013/) and [DevOpsDays](http://devopsdays.org/events/2012-mountainview/) conferences in Santa Clara. The former is expensive, very big, public, focused on Web Performance and Operations. The latter is small, private, focused of DevOps culture. 
 
@@ -29,7 +29,7 @@ Few insights that I marked to myself and were repeated over and over again on nu
 
 6. **Microsoft** - Windows, .NET world is a dead end. It's hardly  scalable (MS SQL Server), slower (IIS), harder to operate, complicated automation, requires stronger hardware and more.
 
-![No comments](http://farm6.staticflickr.com/5443/9193469533_f4f7381ea7_b.jpg)
+![No comments © David Virtser](http://farm6.staticflickr.com/5443/9193469533_f4f7381ea7_b.jpg)
 
 We are definitely going to work on all of these in eToro. 
 
