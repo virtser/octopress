@@ -29,6 +29,8 @@ Few insights that I marked to myself and were repeated over and over again on nu
 
 6. **Microsoft** - Windows, .NET world is a dead end. It's hardly  scalable (MS SQL Server), slower (IIS), harder to operate, complicated automation, requires stronger hardware and more.
 
+![No comments](http://farm6.staticflickr.com/5443/9193469533_f4f7381ea7_b.jpg)
+
 We are definitely going to work on all of these in eToro. 
 
 
