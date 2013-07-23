@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2013-07-03T06:57:35+03:00</updated>
+  <updated>2013-07-23T22:40:43+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Mercurial over Kiln tips &amp; tricks]]></title>
+    <link href="http://virtser.net/2013/07/23/mercurial-over-kiln-tips-and-tricks/"/>
+    <updated>2013-07-23T22:35:00+03:00</updated>
+    <id>http://virtser.net/2013/07/23/mercurial-over-kiln-tips-and-tricks</id>
+    <content type="html"><![CDATA[<p>I want to share with you the slides that I created and presented to eToro R&amp;D to get introduced with more advanced features and options of Mercurial and Kiln.</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/22784525?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
+
+
+<p>Hope you find it helpful.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Velocity and DevOpsDays]]></title>
