@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2013-08-14T21:07:24+03:00</updated>
+  <updated>2013-09-19T14:12:37+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[eToro DevOps Progress]]></title>
+    <link href="http://virtser.net/2013/09/19/etoro-devops-progress/"/>
+    <updated>2013-09-19T14:01:00+03:00</updated>
+    <id>http://virtser.net/2013/09/19/etoro-devops-progress</id>
+    <content type="html"><![CDATA[<p>A little spoiler for our <a href="devopsdays.org/events/2013-telaviv/">DevOpsDays TLV</a> presentation which is going to take place 30 Sep - 01 Oct. :)</p>
+
+<p>I want to share with you one slide of eToro DevOps progress in the last 4 months:</p>
+
+<p><img src="http://virtser.net/images/devopsprogress.png" alt="" /></p>
+
+<p>I know it&#8217;s not much, but considering our current size and cultural gaps we had, I&#8217;m very satisfied!</p>
+
+<p>Only this month we finally completed the recruitment of DevOps team.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Continuous Delivery Vision]]></title>
