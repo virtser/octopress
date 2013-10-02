@@ -9,7 +9,7 @@ published: true
 
 I'm not the guy for great speeches, but still it was an amazing experience for me. People asked questions and was interested in the process we are running. We tried to be as open and transparent as possible, showing the good and bad things in the process. I hope it worked and we will be able to help others to kick-off the process in their organizations.  Will be happy to get your feedback.
 
-Find below the slides from our presentation about DevOps implementation in eToro:
+Find below the slides from our presentation about DevOps implementation in [eToro](http://www.etoro.com):
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/26739176?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe> 
 
