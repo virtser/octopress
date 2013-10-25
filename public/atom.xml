@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2013-10-02T20:15:10+03:00</updated>
+  <updated>2013-10-25T15:55:31+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,20 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Re-Culturing a 200 employees Start-Up Video]]></title>
+    <link href="http://virtser.net/2013/10/25/re-culturing-a-200-employees-start-up-video/"/>
+    <updated>2013-10-25T15:51:00+03:00</updated>
+    <id>http://virtser.net/2013/10/25/re-culturing-a-200-employees-start-up-video</id>
+    <content type="html"><![CDATA[<p>Our talk with Dvir Greenberg for DevOpsDays TLV 2013 conference:</p>
+
+<iframe src="http://virtser.net//player.vimeo.com/video/77674916?title=0" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/77674916">Re-Culturing a 200 employee start-up - David Virtser and Dvir Greenberg</a> from <a href="http://vimeo.com/devopsdays">devopsdays</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Re-culturing a 200 employees startup]]></title>
