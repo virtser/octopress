@@ -14,6 +14,8 @@ My [Fuji X100S](http://www.dpreview.com/reviews/fujifilm-x100s) is on its way to
 It took me a while to read all the articles in the Internet about the camera until I decided to order one and took some notes with all the useful pieces of information that I found in the Internet with references for myself.  
   
 But I think that it would be a good idea to share this list with you in random order as I noted (some notes may repeat). I hope you can find something new and useful there for you too.   
+
+<!-- more -->
   
 **1. **In good lighting and with the focusing point made the largest, this camera is a focusing speed demon and perhaps right up there with Olympus’s FAST AF system. Make it smaller, and you have something on par with Canon’s EOS M camera.  
   
