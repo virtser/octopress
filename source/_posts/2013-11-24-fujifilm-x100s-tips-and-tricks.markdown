@@ -119,7 +119,4 @@ Shortcuts:
   
 
 Hope you liked it.  
-If you have more tips & tricks to add to the list, please leave in comments.  
-  
-Thanks,  
-David. 
+If you have more tips & tricks to add to the list, please leave in comments. 
