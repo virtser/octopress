@@ -109,10 +109,10 @@ Shortcuts:
 - Rather than selecting a function in the shooting menu by pressing the OK button, you can press the shutter button halfway down. Pressing the shutter button halfway down while in playback mode switches the camera directly into shooting mode. You can wake the camera by pressing the shutter button halfway down as well.  
 - Double-tap the macro button to switch between normal and macro modes.
 
-  
 [www.fujirumors.com/using-the-x100s/](http://www.fujirumors.com/using-the-x100s/)  
   
-**13.** x!00s useful accessories
+**13.** List of Fuji x!00s useful accessories
+
 [www.bestmirrorlesscamerareviews.com/2013/11/05/best-fuji-...](http://www.bestmirrorlesscamerareviews.com/2013/11/05/best-fuji-x100s-accessories/)  
   
 **14.** JJC hood and B+W Pro filter: Protection. spend a few dollars, put these on and keep them there. I don't use a cap on this camera (they come off and I lose them). But don't use a cheap filter. B + W are the best. German made, pure optics. Whats the point of having a camera with the best sensor and glass, if you stick cheap distorted junk in front of it. $50 won't break the bank! The hood stops glare and adds more protection. You can spend $$ for the fuji one, or $ for a nasty el cheapo. Spend $ and get the JJC. as good as the real thing, but not flimsy.  
