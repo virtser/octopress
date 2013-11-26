@@ -119,9 +119,17 @@ Shortcuts:
   
 [ed-jones.squarespace.com/blog/2013/11/16/the-cliche-whats...](http://ed-jones.squarespace.com/blog/2013/11/16/the-cliche-whats-in-my-bag-post)  
 
+**More Updates:**
+
 **15.** Auto-ISO settings discussion - I'm finding ISO 6400 is just fine, in fact amazing on this camera so I 've set my minimum speed at 1/125.
 
 [http://www.fujixspot.com/showthread.php?t=853](http://www.fujixspot.com/showthread.php?t=853)  
+
+**16.** In video shooting if you are stuggling with automatic focus, set aperture and shutter to Automatic mode and choose AF-C mode to get constant continues focus.
+
+
+**17.** Unless you are doing macro work with f2 then it works perfectly fine in most cases. The focal length of this lens gives you a larger depth of field anyway. Anything farther away than about 5 feet and at any aperture above 2.8 should be just fine for focus and recompose.
+
 
 Hope you liked it.  
 If you have more tips & tricks to add to the list, please leave in comments. 
