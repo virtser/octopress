@@ -118,7 +118,10 @@ Shortcuts:
 **14.** JJC hood and B+W Pro filter: Protection. spend a few dollars, put these on and keep them there. I don't use a cap on this camera (they come off and I lose them). But don't use a cheap filter. B + W are the best. German made, pure optics. Whats the point of having a camera with the best sensor and glass, if you stick cheap distorted junk in front of it. $50 won't break the bank! The hood stops glare and adds more protection. You can spend $$ for the fuji one, or $ for a nasty el cheapo. Spend $ and get the JJC. as good as the real thing, but not flimsy.  
   
 [ed-jones.squarespace.com/blog/2013/11/16/the-cliche-whats...](http://ed-jones.squarespace.com/blog/2013/11/16/the-cliche-whats-in-my-bag-post)  
-  
+
+**15.** Auto-ISO settings discussion - I'm finding ISO 6400 is just fine, in fact amazing on this camera so I 've set my minimum speed at 1/125.
+
+[http://www.fujixspot.com/showthread.php?t=853](http://www.fujixspot.com/showthread.php?t=853)  
 
 Hope you liked it.  
 If you have more tips & tricks to add to the list, please leave in comments. 
