@@ -5,7 +5,7 @@ date: 2013-05-01 08:02
 comments: true
 published: true
 ---
-![First eToro logo - 2007](/images/etoro_logo.jpg)
+![First eToro logo - 2007](/images/logo.jpg)
 
 It's all started for me about 6 years ago, summer 2007. I left another startup in gambling industry in favor of [eToro], which looked very promising to me. I had an experience of few years as webmaster and web developer and I was at my last year of computer science studies in a collage. My main mission was to establish company websites.
 
