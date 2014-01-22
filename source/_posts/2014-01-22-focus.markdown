@@ -1,0 +1,19 @@
+![](images/focus.jpg)
+
+Lets talk about Focus and its importance in our life. Bear with me.
+
+I recently spent few hour of my time explaining to my colleagues from [eToro](http://www.etoro.com/) broad management about how important is to make a focus. Many times, as a startup, we tempted to join a new venture or not to loose another opportunity of business development.
+
+Today, when we are not a startup company anymore, these temptations became a solid products which are not a core of our business and they defocus us from the real product. We have less time to invest to make our main product better because we have to support the other products which became not important anymore.
+
+For example, historically we developed support for many types of payments and we keep on supporting all of them because some users want them. But instead, if we choose to support only Credit Card and PayPal, but do it good, even perfect, we could generate the same amount of volume if not even more!
+
+If we build a good product, people will use it. Lets make such product, so even customers who have no Credit Card or PayPal account will want to create one just in order to try our product. Just like I did this week with [Netflix](netflix.com), which is available for U.S. customers only. I opened a US PayPal account and bought a US VPN to have US IP address and now I watch Netflix in my TV with [Chromecast](http://www.google.com/intl/en/chrome/devices/chromecast/). This is because they built amazing product! 
+
+So I spoke with about 10 people from company broad management about focus and how we can say NO to thinks which are not important. I hope that I could transfer the message.
+
+Meanwhile I succeed myself to push and shut down few legacy products,  which were running for a long time on background and nobody thought to stop them. I also was involved in not starting a new products which are not in main business and I'm proud of it.
+
+**Say NO**! It is more important to say what you are not doing than what you are doing, define non-goals. Make a focus on stuff that really matters, the deal breakers, the stuff that are core of your business. If you can use SaaS services, use them, don't build it yourself. And of course you can apply this rule not just in your work, but in your real life.
+
+> “People think focus means saying yes to the thing you've got to focus on. But that's not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I'm actually as proud of the things we haven't done as the things I have done. Innovation is saying no to 1,000 things.” -- Steve Jobs
