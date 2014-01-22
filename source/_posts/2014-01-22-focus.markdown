@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "FFocus"
+title: "Focus"
 date: 2014-01-22 16:00
 comments: true
 published: true
 ---
 
-![Focus](/images/focus.jpg)
+![](/images/focus.jpg)
 
 Lets talk about Focus and its importance in our life. Bear with me.
 
