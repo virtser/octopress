@@ -5,15 +5,16 @@ date: 2013-11-24 23:33
 comments: true
 published: true
 ---
+
 To alter slightly, this one is not a technical R&D world related post, but my photograpjy hobby related one. Hope you don't mind? Will followup with pictures. :)
 
 ![Fujifilm X100S](http://www.imaging-resource.com/ee_uploads/news/1391/x100s-front.jpg)
 
-My [Fuji X100S](http://www.dpreview.com/reviews/fujifilm-x100s) is on its way to me. I'm so excited about it that I started to learn more about it before I actually got it.   
+My [Fuji X100S](http://www.dpreview.com/reviews/fujifilm-x100s) is on its way to me. I'm so excited about it that I started to learn more about it before I actually got it.
   
-It took me a while to read all the articles in the Internet about the camera until I decided to order one and took some notes with all the useful pieces of information that I found in the Internet with references for myself.  
+It took me a while to read all the articles in the Internet about the camera until I decided to order one and took some notes with all the useful pieces of information that I found in the Internet with references for myself.
   
-But I think that it would be a good idea to share this list with you in random order as I noted (some notes may repeat). I hope you can find something new and useful there for you too.   
+But I think that it would be a good idea to share this list with you in random order as I noted (some notes may repeat). I hope you can find something new and useful there for you too.
 
 <!-- more -->
   
@@ -101,7 +102,7 @@ Shortcuts:
 - A long press of the Fn button will bring up the Fn button’s configuration menu, where you can assign one of several functions. I typically assign ISO to this button, because I like to be able to quickly change my Auto-ISO configuration (minimum shutter speed). Another popular option for this button is enabling the camera’s built-in ND filter.  
 - Press and hold DISP/BACK button to activate (or deactivate) the camera’s Silent Mode. When this mode is turned on, the X100S functions quietly and inconspicuously. It won’t make any artificial noises and it abstains from using both the flash and the AF-assist lamp.  
 - Pressing the DISP/BACK button while selecting an AF field in AF-S Area mode will immediately select the central AF field.  
-- Press DISP/BACK in shooting or playback mode to change the view of the currently active display. This means that in order to change the view of either the OVF, the EVF or the LCD, either the OVF, EVF or LCD must be active when you press the button. You can select the display you want to change with the VIEW MODE button. Alternatively, use the eye-sensor to activate a display by looking through it, then change its view with the DISP/BACK button. The X100S can’t read your mind, you need to tell it which display’s view you want to change.   
+- Press DISP/BACK in shooting or playback mode to change the view of the currently active display. This means that in order to change the view of either the OVF, the EVF or the LCD, either the OVF, EVF or LCD must be active when you press the button. You can select the display you want to change with the VIEW MODE button. Alternatively, use the eye-sensor to activate a display by looking through it, then change its view with the DISP/BACK button. The X100S can’t read your mind, you need to tell it which display’s view you want to change.
 - Finally, to check (or upgrade) the firmware version of the camera, press and hold the DISP/BACK button while switching on the camera.  
 - In manual focus mode, press the AE-L/AF-L button to initiate an autofocus run.  
 - Also in manual focus mode, press and hold the command dial to cycle through the camera’s different MF aids: standard, digital split image and focus peaking.  
