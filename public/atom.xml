@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2014-01-23T20:21:14+02:00</updated>
+  <updated>2014-01-28T18:53:53+02:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[API Implementation]]></title>
+    <link href="http://virtser.net/2014/01/28/api-implementation/"/>
+    <updated>2014-01-28T20:41:00+02:00</updated>
+    <id>http://virtser.net/2014/01/28/api-implementation</id>
+    <content type="html"><![CDATA[<p><img src="http://virtser.net/images/api.gif" alt="" /></p>
+
+<p>We are in the process of building of solid APIs for each of <a href="http://www.etoro.com/">eToro</a> main domains. It is not an easy task at all, as we didn&#8217;t invest too much in the past 7 years of eToro existence in all the architectural aspects of the system.</p>
+
+<p>How services interact with each other? Who is responsible of doing what? What are the standards that we are working with? Which tools or technology do we choose for specific task? All these questions were not answered until now. Today we start to talk and think about it along with progressing with our first real API - <strong>User API</strong>. It is the place where it all begins - user created for the first time, user details updated, etc&#8230;</p>
+
+<p>Today we still have one Users table in our big database which holds all our customer records in addition to their basic details and more irrelevant to user stuff. Each application can update (or read) this table from code without going through a dedicated API. The problem with this approach is that there is no <a href="http://en.wikipedia.org/wiki/Single_Source_of_Truth">single source of truth</a> - each and every service can apply its own business logic to change user related data, which leading to data inconsistency.</p>
+
+<p>I&#8217;m taking active role of product/project manager for this API and leading the integration process with teams. Our main goals we want to achieve by User API implementation are:</p>
+
+<ol>
+<li><p>Create the &#8220;Single Source of Truth&#8221;. All the requests to register user, update it&#8217;s details or get data of some user will pass through one API which hold the business logic of the user domain. We love <a href="https://servicestack.net/">ServiceStack</a> and we are using their framework for our REST APIs.</p></li>
+<li><p>Provide notifications of user changes to different services via Pub/Sub instead of polling database for changes like we do today. We are using <a href="http://www.rabbitmq.com/">RabbitMQ</a> messaging here.</p></li>
+<li><p>Separate User related data to it&#8217;s own dedicated database. This to isolate and encapsulate the user domain better. It will help in many aspects - automatic deployment of database changes with CD process, creation of environments with empty user database, other services won&#8217;t effect this database performance and vice versa. We are working with <a href="http://msdn.microsoft.com/en-us/data/tools.aspx">Microsoft SQL Server Data Tools</a> to accompish this</p></li>
+</ol>
+
+
+<p>Today the User API is almost ready, but can&#8217;t be completed because we need to migrate all the clients to use it instead of DB first. After all the clients which update customer records migrate, we will be able to enable caching, provide Pub/Sub functionality which can be trusted and eventually take out the user data our of the main DB to a dedicated one.</p>
+
+<p>Lessons learned so far during the API building and integration process:</p>
+
+<ol>
+<li><p>Don&#8217;t start it when it&#8217;s too late - invest in your architecture from the beginning or at least think about it. Now it takes so many time to make the integration and fix things which were done wrongly in the past.</p></li>
+<li><p>Build a good plan - development plan (phases: establishment, optimization), integration plan (insert, update, select).</p></li>
+<li><p>Don&#8217;t try to fix all evil at once, do it in small chunks, work iteratively. Otherwise it will hurt, it will bring more risk to migration.</p></li>
+<li><p>Explain the importance of this move to the company - management and developers. It is required for engagement of people to give higher priority for integration than any other tasks.</p></li>
+<li><p>Communication and follow up of progress are important to make the development and migration as fast as possible. You don&#8217;t want this project to take a lifetime.</p></li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Focus]]></title>

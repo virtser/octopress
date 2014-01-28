@@ -7,7 +7,7 @@
 	<meta name="author" content="David Virtser">
 
 	
-	<meta name="description" content="Jan 22nd, 2014 Focus Lets talk about Focus and its importance in our life. Bear with me. I recently spent few hour of my time explaining to my &hellip;">
+	<meta name="description" content="Jan 28th, 2014 API Implementation We are in the process of building of solid APIs for each of eToro main domains. It is not an easy task at all, as &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,62 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-28T20:41:00+02:00" data-updated="true" itemprop="datePublished">Jan 28<span>th</span>, 2014</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2014/01/28/api-implementation/" itemprop="url">API Implementation</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="/images/api.gif" alt="" /></p>
+
+<p>We are in the process of building of solid APIs for each of <a href="http://www.etoro.com/">eToro</a> main domains. It is not an easy task at all, as we didn&#8217;t invest too much in the past 7 years of eToro existence in all the architectural aspects of the system.</p>
+
+<p>How services interact with each other? Who is responsible of doing what? What are the standards that we are working with? Which tools or technology do we choose for specific task? All these questions were not answered until now. Today we start to talk and think about it along with progressing with our first real API - <strong>User API</strong>. It is the place where it all begins - user created for the first time, user details updated, etc&#8230;</p>
+
+<p>Today we still have one Users table in our big database which holds all our customer records in addition to their basic details and more irrelevant to user stuff. Each application can update (or read) this table from code without going through a dedicated API. The problem with this approach is that there is no <a href="http://en.wikipedia.org/wiki/Single_Source_of_Truth">single source of truth</a> - each and every service can apply its own business logic to change user related data, which leading to data inconsistency.</p>
+
+<p>I&#8217;m taking active role of product/project manager for this API and leading the integration process with teams. Our main goals we want to achieve by User API implementation are:</p>
+
+<ol>
+<li><p>Create the &#8220;Single Source of Truth&#8221;. All the requests to register user, update it&#8217;s details or get data of some user will pass through one API which hold the business logic of the user domain. We love <a href="https://servicestack.net/">ServiceStack</a> and we are using their framework for our REST APIs.</p></li>
+<li><p>Provide notifications of user changes to different services via Pub/Sub instead of polling database for changes like we do today. We are using <a href="http://www.rabbitmq.com/">RabbitMQ</a> messaging here.</p></li>
+<li><p>Separate User related data to it&#8217;s own dedicated database. This to isolate and encapsulate the user domain better. It will help in many aspects - automatic deployment of database changes with CD process, creation of environments with empty user database, other services won&#8217;t effect this database performance and vice versa. We are working with <a href="http://msdn.microsoft.com/en-us/data/tools.aspx">Microsoft SQL Server Data Tools</a> to accompish this</p></li>
+</ol>
+
+
+<p>Today the User API is almost ready, but can&#8217;t be completed because we need to migrate all the clients to use it instead of DB first. After all the clients which update customer records migrate, we will be able to enable caching, provide Pub/Sub functionality which can be trusted and eventually take out the user data our of the main DB to a dedicated one.</p>
+
+<p>Lessons learned so far during the API building and integration process:</p>
+
+<ol>
+<li><p>Don&#8217;t start it when it&#8217;s too late - invest in your architecture from the beginning or at least think about it. Now it takes so many time to make the integration and fix things which were done wrongly in the past.</p></li>
+<li><p>Build a good plan - development plan (phases: establishment, optimization), integration plan (insert, update, select).</p></li>
+<li><p>Don&#8217;t try to fix all evil at once, do it in small chunks, work iteratively. Otherwise it will hurt, it will bring more risk to migration.</p></li>
+<li><p>Explain the importance of this move to the company - management and developers. It is required for engagement of people to give higher priority for integration than any other tasks.</p></li>
+<li><p>Communication and follow up of progress are important to make the development and migration as fast as possible. You don&#8217;t want this project to take a lifetime.</p></li>
+</ol>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -443,36 +499,6 @@
 
 <p>P.S.
 If you are interested we can open source this Node.js SEO solution. Let me know in comments.</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-29T21:34:00+03:00" data-updated="true" itemprop="datePublished">May 29<span>th</span>, 2013</time></div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2013/05/29/etoro-is-looking-for-devops-engineers/" itemprop="url">eToro Is Looking for DevOps Engineers</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>If you are open minded, have a vision and potential, got wide process understanding, passionate about building CI/CD process, don&#8217;t afraid of writing code (hacking), like to explore new domains, don&#8217;t want to manage people, like challenges, understand DevOps culture, live in Israel and have experience in Dev, DBA, IT, Ops or CM - <a href="http://www.etoro.com">eToro</a> is looking for you!</p>
-
-<p>Please comment with questions or <a href="http://virtser.net/about">contact me</a> in private.</p>
 
 		
 		
