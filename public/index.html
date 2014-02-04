@@ -7,7 +7,7 @@
 	<meta name="author" content="David Virtser">
 
 	
-	<meta name="description" content="Jan 28th, 2014 API Implementation We are in the process of building of solid APIs for each of eToro main domains. It is not an easy task at all, as &hellip;">
+	<meta name="description" content="Feb 4th, 2014 Why Graphite There are many posts in the Internet about what is Graphite and how to work with it. In this post I want to talk about &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,45 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-04T20:58:00+02:00" data-updated="true" itemprop="datePublished">Feb 4<span>th</span>, 2014</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2014/02/04/why-graphite/" itemprop="url">Why Graphite</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="http://graphite.wdfiles.com/local--files/screen-shots/graphite_fullscreen_800.png" alt="" /></p>
+
+<p>There are many posts in the Internet about what is <a href="http://graphite.wikidot.com/">Graphite</a> and how to work with it. In this post I want to talk about why any professional engineer (developer) have to work with Graphite.</p>
+
+<p>During my Graphite implementation sessions with engineers in <a href="http://www.etoro.com/">eToro</a> I felt difficulty to explain developers what is Graphite and why they want to use it instead (or in addition to) other monitoring tools.</p>
+
+<p>We tried variety of different logging and monitoring tools in eToro in the last year. We are using log4net to save our logs in files. We used to work with <a href="https://logentries.com/">LogEntries</a> to store our logs in cloud, but we decided that it doesn&#8217;t precisely fit our needs and now we almost finished the migration to <a href="http://www.splunk.com/">Splunk</a>. Splunk knows to do logs analysis better in addition to aggregations, correlations and dashboards.</p>
+
+<p>We also working with <a href="http://newrelic.com/">New Relic</a> which is really simple to install. You just need to install an agent on your web server and you get a great visibility on your application performance including database and external dependencies. But we faced few problems with it. Most of our applications are written in .NET and some types of applications like WCF, Web API or <a href="https://servicestack.net/">ServiceStack</a> API were not well supported by New Relic (could be that they added a better support by now) and returned wrong numbers if at all. In addition we found in some unknown cases that New Relic agent installed on IIS caused sometimes to random application pool restarts.</p>
+
+<p>And now before I explain why Graphite, I have to explain in short about what is Graphite. Roughly Graphite is a metrics collector. You can report withing the code of your application counts, timers and gauges. You can count how many times some method in your application was called or the time it took to execute this method. You give your metric a name separated by dots and Graphite knows to break it and show it as a tree in its UI (see the screenshot above).</p>
+
+
+		
+		<a href="/2014/02/04/why-graphite/" class="more-link">Read on &rarr;</a>
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -457,48 +496,6 @@
 <p><a href="http://www.youtube.com/watch?v=LCZT_Q3z520&amp;list=SP055Epbe6d5bdB4KPqssegVpYUDJXSzOp&amp;index=12">Gamedays on the Obama Campaign</a></p>
 
 <p>That&#8217;s it for today. See you at <a href="http://devopsdays.org/events/2013-telaviv/">DevOpsDays Tel-Aviv</a>. eToro is going to sponsor this event and hopefully we will be able to present our journey there.</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-06T20:05:00+03:00" data-updated="true" itemprop="datePublished">Jun 6<span>th</span>, 2013</time></div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2013/06/06/etoro-openbook-seo/" itemprop="url">eToro Openbook SEO Implementation</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>Sometimes in eToro we are doing really innovative and beautiful things.</p>
-
-<p>In our <a href="https://openbook.etoro.com">Openbook</a> web application most of the calls are executed on client side using Ajax. Which means that our pages content is  changing dynamically. Google bots can index static content pages only.</p>
-
-<p>It was a challenge to find a good and easy to implement solution which required minimum of changes on <a href="https://openbook.etoro.com">Openbook</a> itslef.</p>
-
-<p>Find below the presentation explaining our solution:</p>
-
-<iframe src="http://prezi.com/embed/8jncrjqi204a/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="600" height="400" frameBorder="0"></iframe>
-
-
-<p>All the credits for the presentation goes to Omry Hay, for design to <a href="http://gal-segal.net">Gal Segal</a> &amp; Shlomi Shemesh and for implementation to Shomi Shemesh, the one and only!</p>
-
-<p>P.S.
-If you are interested we can open source this Node.js SEO solution. Let me know in comments.</p>
 
 		
 		

@@ -3,7 +3,7 @@ layout: post
 title: "Why Graphite"
 date: 2014-02-04 20:58
 comments: true
-published: false
+published: true
 ---
 ![](http://graphite.wdfiles.com/local--files/screen-shots/graphite_fullscreen_800.png)
 
@@ -15,7 +15,7 @@ We tried variety of different logging and monitoring tools in eToro in the last 
 
 We also working with [New Relic](http://newrelic.com/) which is really simple to install. You just need to install an agent on your web server and you get a great visibility on your application performance including database and external dependencies. But we faced few problems with it. Most of our applications are written in .NET and some types of applications like WCF, Web API or [ServiceStack](https://servicestack.net/) API were not well supported by New Relic (could be that they added a better support by now) and returned wrong numbers if at all. In addition we found in some unknown cases that New Relic agent installed on IIS caused sometimes to random application pool restarts.
 
-And now before I explain why Graphite, I have to explain in short about what is Graphite. Roughly Graphite is a metrics collector. You can report withing the code of your application counts, timers and gauges. You can count how many times some method in your application was called or the time it took to execute this method. You give your metric a name separated by dots and Graphite knows to break it and show it as a tree in its UI (see the screenshot above).
+And now before explaining why Graphite, I have to explain breifly about what is Graphite. Very rughly - Graphite is a metrics collector. You can report withing the code of your application counts, timers and gauges. You can count how many times some method in your application was called or the time it took to execute this method. You give your metric a name separated by dots and Graphite knows to break it and show it as a tree in its UI (see the screenshot above).
 
 <!-- more -->
 
@@ -35,7 +35,7 @@ By the way, timers includes counters as well. You don't have to count the call a
 
 * In this example I'm using [StatsD C# Client](https://github.com/goncalopereira/statsd-csharp-client)
 
-StatsD is a client which received the metrics by UDP, process it, applies some math function and stores it in Graphite. (this in not 100% correct, I wrote it as I wrote in terms of simplicity)
+StatsD is a client which received the metrics by UDP, process it, applies some math function and stores it in Graphite. (this in not 100% correct, I wrote it as I wrote in favor of explanation  simplicity)
 
 So now, when you have some high level clue about what you can do with Graphite, we will talk why we (as developers) have to use Graphite.
 
@@ -95,7 +95,7 @@ Another code example where we created a custom .NET [*GraphiteTiming*] attribute
     }
 
 
-If you didn't try Graphite yet, you should definitely do! it gives you "eyes" to see what is happening with your application in real time. 
+If you didn't try Graphite yet, you should definitely do! It gives you "eyes" and power to see what is happening with your application in real time. 
 
 Like some wise man said, life of a good developer splits to two - before Graphite and after Graphite. ;)
 
