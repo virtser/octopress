@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2014-02-02T11:58:27+02:00</updated>
+  <updated>2014-02-04T20:52:41+02:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -28,7 +28,7 @@
 
 <p>We also working with <a href="http://newrelic.com/">New Relic</a> which is really simple to install. You just need to install an agent on your web server and you get a great visibility on your application performance including database and external dependencies. But we faced few problems with it. Most of our applications are written in .NET and some types of applications like WCF, Web API or <a href="https://servicestack.net/">ServiceStack</a> API were not well supported by New Relic (could be that they added a better support by now) and returned wrong numbers if at all. In addition we found in some unknown cases that New Relic agent installed on IIS caused sometimes to random application pool restarts.</p>
 
-<p>And now before I explain why Graphite, I have to explain in short about what is Graphite. Roughly Graphite is a metrics collector. You can report withing the code of your application counts, timers and gauges. You can count how many times some method in your application was called or the time it took to execute this method. You give your metric a name separated by dots and Graphite knows to break it and show it as a tree in its UI (see the screenshot above).</p>
+<p>And now before explaining why Graphite, I have to explain breifly about what is Graphite. Very rughly - Graphite is a metrics collector. You can report withing the code of your application counts, timers and gauges. You can count how many times some method in your application was called or the time it took to execute this method. You give your metric a name separated by dots and Graphite knows to break it and show it as a tree in its UI (see the screenshot above).</p>
 
 <!-- more -->
 
@@ -52,7 +52,7 @@
 </ul>
 
 
-<p>StatsD is a client which received the metrics by UDP, process it, applies some math function and stores it in Graphite. (this in not 100% correct, I wrote it as I wrote in terms of simplicity)</p>
+<p>StatsD is a client which received the metrics by UDP, process it, applies some math function and stores it in Graphite. (this in not 100% correct, I wrote it as I wrote in favor of explanation  simplicity)</p>
 
 <p>So now, when you have some high level clue about what you can do with Graphite, we will talk why we (as developers) have to use Graphite.</p>
 
@@ -110,7 +110,7 @@ public sealed class GraphiteTimingAttribute : OnMethodBoundaryAspect
 }
 </code></pre>
 
-<p>If you didn&#8217;t try Graphite yet, you should definitely do! it gives you &#8220;eyes&#8221; to see what is happening with your application in real time.</p>
+<p>If you didn&#8217;t try Graphite yet, you should definitely do! It gives you &#8220;eyes&#8221; and power to see what is happening with your application in real time.</p>
 
 <p>Like some wise man said, life of a good developer splits to two - before Graphite and after Graphite. ;)</p>
 

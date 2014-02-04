@@ -111,7 +111,7 @@
 
 <p>We also working with <a href="http://newrelic.com/">New Relic</a> which is really simple to install. You just need to install an agent on your web server and you get a great visibility on your application performance including database and external dependencies. But we faced few problems with it. Most of our applications are written in .NET and some types of applications like WCF, Web API or <a href="https://servicestack.net/">ServiceStack</a> API were not well supported by New Relic (could be that they added a better support by now) and returned wrong numbers if at all. In addition we found in some unknown cases that New Relic agent installed on IIS caused sometimes to random application pool restarts.</p>
 
-<p>And now before I explain why Graphite, I have to explain in short about what is Graphite. Roughly Graphite is a metrics collector. You can report withing the code of your application counts, timers and gauges. You can count how many times some method in your application was called or the time it took to execute this method. You give your metric a name separated by dots and Graphite knows to break it and show it as a tree in its UI (see the screenshot above).</p>
+<p>And now before explaining why Graphite, I have to explain breifly about what is Graphite. Very rughly - Graphite is a metrics collector. You can report withing the code of your application counts, timers and gauges. You can count how many times some method in your application was called or the time it took to execute this method. You give your metric a name separated by dots and Graphite knows to break it and show it as a tree in its UI (see the screenshot above).</p>
 
 
 		
