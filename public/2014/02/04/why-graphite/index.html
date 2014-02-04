@@ -103,7 +103,7 @@
 
 <p>We tried variety of different logging and monitoring tools in eToro in the last year. We are using log4net to save our logs in files. We used to work with <a href="https://logentries.com/">LogEntries</a> to store our logs in cloud, but we decided that it doesn&#8217;t precisely fit our needs and now we almost finished the migration to <a href="http://www.splunk.com/">Splunk</a>. Splunk knows to do logs analysis better in addition to aggregations, correlations and dashboards.</p>
 
-<p>We also working with <a href="http://newrelic.com/">New Relic</a> which is really simple to install. You just need to install an agent on your web server and you get a great visibility on your application performance including database and external dependencies. But we faced few problems with it. Most of our applications are written in .NET and some types of applications like WCF, Web API or <a href="https://servicestack.net/">ServiceStack</a> API were not well supported by New Relic (could be that they added a better support by now) and returned wrong numbers if at all. In addition we found in some unknown cases that New Relic agent installed on IIS caused sometimes to random application pool restarts.</p>
+<p>We are also using <a href="http://newrelic.com/">New Relic</a> which is a great SaaS tool. You just need to install an agent on your web server and you get a great visibility on your application performance including database and external dependencies. But we faced few problems with it. Most of our applications are written in .NET and some types of applications like WCF, Web API or <a href="https://servicestack.net/">ServiceStack</a> were not well supported by New Relic (could be that they added a better support by now) and returned wrong numbers if at all. In addition we found in some unknown cases that New Relic agent installed on IIS caused random application pool restarts.</p>
 
 <p>And now before explaining why Graphite, I have to explain breifly about what is Graphite. Very rughly - Graphite is a metrics collector. You can report withing the code of your application counts, timers and gauges. You can count how many times some method in your application was called or the time it took to execute this method. You give your metric a name separated by dots and Graphite knows to break it and show it as a tree in its UI (see the screenshot above).</p>
 
@@ -136,10 +136,10 @@
 <p><strong>Graphite advantages:</strong></p>
 
 <ol>
-<li><p>Once Graphite and StatsD servers are installed and all the required ports are open in firewall to accept UPD connections it requires absolutely no IT intervention, but only for regular daily monitoring and maintenance of up time. I mean that we, as developers, are completely independently can add new metrics to our code and they will appear in Graphite when you deploy the application to production.</p></li>
-<li><p>Graphite just gives power to developers. We control where to place our metrics, how do they behave and how we build our graphs based on these metrics. In case of New Relic, it is a black box, you never know when do they start to measure some metric and when do they stop. In case of Graphite you know exactly where to start measuring time and where to stop it, it gives you depth. We also have full control on the name of the metrics. You can include withing the code scope to metric name some dynamic parameters like &#8220;machine name&#8221; for example.</p></li>
-<li><p>Graphite is non blocking. You report your metrics over UDP which is non blocking protocol. You can do in synchronously in your code and even if Graphite server is not responding, your application will work as usual.</p></li>
-<li><p>Graphite knows to smartly aggregate your data and shrink it over time. You can define it for example to keep every second of data in the first week, then every minute in the first month, then every date in the first year. This way you don&#8217;t have to keep tons of metrics, but you know exactly the file size of each metric.</p></li>
+<li><p>Once Graphite and StatsD servers are installed and all the required ports are open in firewall to accept UPD connections it requires absolutely no IT intervention, but only for regular daily monitoring and maintenance of up time. I mean that we, as developers, can independently add new metric to our code and it  will be immidiately created and shown in Graphite when you deploy the application to production.</p></li>
+<li><p>Graphite gives power to developers. We control where to place our metrics, how do they behave and how we build our graphs based on these metrics. In case of New Relic, it is a black box, you never know when do they start to measure some metric and when do they stop. In case of Graphite you know exactly where to start measuring time and where to stop it, it gives you depth. We also have full control on the name of the metrics. You can include withing the code scope to metric name some dynamic parameters like &#8220;machine name&#8221; for example.</p></li>
+<li><p>Graphite is non blocking. You report your metrics over UDP which is non blocking protocol. You can do it synchronously in your code and even if Graphite server is not responding, your application will work as usual.</p></li>
+<li><p>Graphite knows to smartly aggregate your data and shrink it over time. You can define it for example to keep every second of data in the first week, then every minute in the first month, then every date in the first year. This way you don&#8217;t have to keep tons of metrics and you know exactly the file size of each metric.</p></li>
 <li><p>Graphite is very easy to work with. After reporting a metric, it is a matter of one click on that metric and you can see your metric graph. You can easily drop one graph to another to merge them and see in one window. You can apply math functions on your graphs and save multiple graph windows as dashboards. And more&#8230;</p></li>
 </ol>
 
@@ -189,7 +189,7 @@ public sealed class GraphiteTimingAttribute : OnMethodBoundaryAspect
 
 <p>If you didn&#8217;t try Graphite yet, you should definitely do! It gives you &#8220;eyes&#8221; and power to see what is happening with your application in real time.</p>
 
-<p>Like some wise man said, life of a good developer splits to two - before Graphite and after Graphite. ;)</p>
+<p>Like some wise man said, life of a good developer splits to two parts - before Graphite and after Graphite. ;)</p>
 
 <p>Must read references to Graphite information:</p>
 
