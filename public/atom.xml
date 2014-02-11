@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2014-02-04T21:27:09+02:00</updated>
+  <updated>2014-02-11T21:55:40+02:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Measuring Business Values]]></title>
+    <link href="http://virtser.net/2014/02/11/measuring-business-values/"/>
+    <updated>2014-02-11T21:51:00+02:00</updated>
+    <id>http://virtser.net/2014/02/11/measuring-business-values</id>
+    <content type="html"><![CDATA[<p>The following video is a little long, but its sooooo good! Please please please find time to see it.</p>
+
+<p>It is talking about measuring business values through code and it&#8217;s  importance.</p>
+
+<p>I think it&#8217;s a must see video for developers and product people, it can connect us better.</p>
+
+<iframe width="640" height="360" src="http://virtser.net//www.youtube.com/embed/czes-oa0yik?rel=0" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why Graphite]]></title>
