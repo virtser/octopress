@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2014-07-31T17:35:33+03:00</updated>
+  <updated>2014-07-31T17:41:48+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -20,8 +20,11 @@
     <id>http://virtser.net/2014/07/31/popular-programming-languages-in-israel</id>
     <content type="html"><![CDATA[<p>Some interesting numbers based on my LinkedIn research I did related to  choosing startup technology stack considering current situation on local market.</p>
 
-<p><img src="https://pbs.twimg.com/media/Bt4SrvoIgAAlnQX.png:large" alt="" />
-Hope you find it interesting and useful for you.</p>
+<p><img src="https://pbs.twimg.com/media/Bt4SrvoIgAAlnQX.png:large" alt="" /></p>
+
+<p>To get the data I just used Linked search and gave programming language name as keyword and filtered the results by location.</p>
+
+<p>Hope you find it interesting and useful for you.</p>
 
 <p>Do you think LinkedIn reflect the reality? Let me know what you think.</p>
 ]]></content>
