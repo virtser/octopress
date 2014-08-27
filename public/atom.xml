@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2014-07-31T17:41:48+03:00</updated>
+  <updated>2014-08-27T12:27:30+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Applenium]]></title>
+    <link href="http://virtser.net/2014/08/27/applenium/"/>
+    <updated>2014-08-27T12:08:00+03:00</updated>
+    <id>http://virtser.net/2014/08/27/applenium</id>
+    <content type="html"><![CDATA[<p>I just wanted to tell you about a very cool and groundbreaking test automation UI which was developed by <a href="https://twitter.com/maximguenis">Maxim Guienis</a>, my friend from eToro. It was designed for specific eToro needs to provide an easy &#8220;wizard like&#8221; tool for QA to write automatic UI tests.</p>
+
+<p>It is called <strong>APPLENIUM</strong> (<a href="http://appium.io/">APPium</a> + <a href="http://www.seleniumhq.org/">seLENIUM</a>) and it uses Appium and Selenium frameworks as helpers to make mobile and web testing easy.</p>
+
+<p>Find the <a href="https://github.com/bobmarthin/Applenium">source code</a> or get more information about it on his <a href="http://applenium.blogspot.com">blog</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Popular programming languages in Israel]]></title>
@@ -730,25 +743,6 @@ to build and maintain company websites, Affiliates system and Billing front-end.
 <p>In the next post I&#8217;m going to describe in more details about <a href="http://etoro.com">eToro</a> past and how everything has started.</p>
 
 <p>Keep on reading and as always, I will be glad to get your feedback. ;)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://virtser.net/2013/04/05/hello-world/"/>
-    <updated>2013-04-05T14:13:00+03:00</updated>
-    <id>http://virtser.net/2013/04/05/hello-world</id>
-    <content type="html"><![CDATA[<p>This is a very first post in my new minimalistic geek blog based on <a href="https://github.com/imathis/octopress">Octopress</a> framework for <a href="https://github.com/mojombo/jekyll">Jekyll</a> blogging.</p>
-
-<p>It is supposed to be simple and easy to maintain. It supports <a href="http://en.wikipedia.org/wiki/Markdown">markdown</a> writing only, has no Admin section and you have to commit changes to <a href="https://github.com/virtser/octopress">GitHub</a> in order to publish a new post. So if I make a spelling mistake or type, you can fork the repository, fix it and make a pull request. ;)</p>
-
-<p>I used to have several blogs in the past. One was a photography blog based on Wordpress, another photo blog in <a href="http://www.tumblr.com">Tumblr</a> and the last one based on BlogEngine.Net with some own custom modifications was my personal blog.</p>
-
-<p>All blogs I used to have, were in <em>Russian</em> only. It is my first attempt to write a blog in <em>English</em>. It supposed to serve all my <em>English</em>, <em>Russian</em> and <em>Hebrew</em> speaking friends.</p>
-
-<p>I&#8217;m going to write here about the things that interest me and may be interesting to read for others as well. I&#8217;m going to share here stuff related to my workplace and hobbies. It is important for me to get feedback. So if you read a post and you care or have something to say about it, please comment or share with others. You can also subscribe to this blog <a href="http://feeds.feedburner.com/poisonsblog">RSS feed</a> to get updates.</p>
-
-<p>I have to stop talking to myself as nobody read first blog posts&#8230;  :)</p>
 ]]></content>
   </entry>
   
