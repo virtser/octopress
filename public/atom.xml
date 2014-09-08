@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2014-09-04T21:24:29+03:00</updated>
+  <updated>2014-09-08T10:19:16+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Live page reload]]></title>
+    <link href="http://virtser.net/2014/09/08/live-page-reload/"/>
+    <updated>2014-09-08T10:04:00+03:00</updated>
+    <id>http://virtser.net/2014/09/08/live-page-reload</id>
+    <content type="html"><![CDATA[<p>If you are working with Sublime Text 2/3 and you want to be able to see live changes on your HTML/CSS layout, follow the steps below:</p>
+
+<ol>
+<li><p>Find and install a new package from <a href="http://www.sublimetext.com/3">SublimeText</a> called &#8220;LiveReload&#8221;. Set <code>"save_on_focus_lost" :true</code> in user settings to enable auto save functionality.</p></li>
+<li><p>Add <a href="https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei">LiveReload Chrome extension</a> which you will have to enable in order to activate LiveRecord on page you are working at. Make sure to select in extensions management screen &#8221; Allow access to file URLs&#8221; to enable this functionality on local files as well.</p></li>
+<li><p>Install and run <a href="https://github.com/napcs/node-livereload">livereload node.js server</a> by running the following terminal commands:</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ npm install -g livereload
+</span><span class='line'>$ livereload [path]</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building a Deployment Pipeline with Jenkins]]></title>
@@ -681,46 +703,6 @@ If you are interested we can open source this Node.js SEO solution. Let me know 
 
 <p>P.S.
 Next post will be much more positive. ;)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[History of development process in eToro]]></title>
-    <link href="http://virtser.net/2013/05/01/history-of-development-process-in-etoro/"/>
-    <updated>2013-05-01T08:02:00+03:00</updated>
-    <id>http://virtser.net/2013/05/01/history-of-development-process-in-etoro</id>
-    <content type="html"><![CDATA[<p><img src="http://virtser.net/images/logo.jpg" alt="First eToro logo - 2007" /></p>
-
-<p>It&#8217;s all started for me about 6 years ago, summer 2007. I left another startup in gambling industry in favor of <a href="http://www.etoro.com">eToro</a>, which looked very promising to me. I had an experience of few years as webmaster and web developer and I was at my last year of computer science studies in a collage. My main mission was to establish company websites.</p>
-
-<p>We were very few developers in a fresh new startup company. And as any typical Israeli startup company of these years our focus was to build and deliver our products as fast as possible.</p>
-
-<p>There were about 5 developers all in all when each was responsible to cover products in multiple fields. As web developer I was responsible
-to build and maintain company websites, Affiliates system and Billing front-end.</p>
-
-<p>In the first year the development process was almost unmanaged. We got requirements and requests for development by email or during a short brainstorm meeting in our CEO (<a href="http://yoniassia.com">Yoni Assia</a>) office. We had no revision control system, neither bug tracking system. And it all worked fine, as soon as we were a small team.</p>
-
-<p>About a year later, as our needs and requirements increased, we had to recruit more developers to the teams. R&amp;D teams started to grow. We got more and more emails with development requests which we passed from one to other. It was endless email threads which can be hardly tracked.</p>
-
-<p>At this point we decided to install our first revision control system to make audit of changes - <a href="http://en.wikipedia.org/wiki/Microsoft_Visual_SourceSafe">Microsoft Source Safe</a>. It was a real pain in the a*s to use it. It was eventually replaced by SVN which is better, but in bigger teams we had a branch merge hell with it.</p>
-
-<p>Later on we also installed simple and intuitive bug tracking system which we are still using - <a href="http://www.fogcreek.com/fogbugz/">FogBugz</a>. We have .NET stack here for 80% of our products, that was the main reason for using these tools.</p>
-
-<p>We had dedicated QA team which did only &#8220;monkey testing&#8221;. We had no automation at all. No unit tests, integration test, test automation, performance test, load test. Nobody invested time in peer code reviews. Logs were a mess, same with monitoring. It was very hard to find and identify the source of the problem.</p>
-
-<p>Our development was done on personal computers and we used them as our environments as well. Shared resources. Each team member could break others environment with his change.</p>
-
-<p>No REST APIs at all, instead DLLs everywhere we need to communicate with other internal components.</p>
-
-<p>Product lead R&amp;D but not the opposite. Developers has almost no power to decide.</p>
-
-<p>We worked in waterfall software development methodology although it wasn&#8217;t formal. Our releases was very long and risky. It took months to release following by weeks to fix bugs of such big release.</p>
-
-<p>And so on and on, you get the picture, right?</p>
-
-<p>It was a nightmare&#8230;</p>
-
-<p>In the next post I’m going to describe the current R&amp;D situation in <a href="http://www.etoro.com">eToro</a>.</p>
 ]]></content>
   </entry>
   
