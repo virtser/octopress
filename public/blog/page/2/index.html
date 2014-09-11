@@ -7,7 +7,7 @@
 	<meta name="author" content="David Virtser">
 
 	
-	<meta name="description" content="Oct 25th, 2013 Re-Culturing a 200 Employees Start-Up Video Our talk with Dvir Greenberg for DevOpsDays TLV 2013 conference: Re-Culturing a 200 &hellip;">
+	<meta name="description" content="Nov 24th, 2013 Fujifilm X100S Tips &amp; Tricks To alter slightly, this one is not a technical R&amp;D world related post, but my photograpjy hobby &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,43 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-24T23:33:00+02:00" data-updated="true" itemprop="datePublished">Nov 24<span>th</span>, 2013</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2013/11/24/fujifilm-x100s-tips-and-tricks/" itemprop="url">Fujifilm X100S Tips &amp; Tricks</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>To alter slightly, this one is not a technical R&amp;D world related post, but my photograpjy hobby related one. Hope you don&#8217;t mind? Will followup with pictures. :)</p>
+
+<p><img src="http://www.imaging-resource.com/ee_uploads/news/1391/x100s-front.jpg" alt="Fujifilm X100S" /></p>
+
+<p>My <a href="http://www.dpreview.com/reviews/fujifilm-x100s">Fuji X100S</a> is on its way to me. I&#8217;m so excited about it that I started to learn more about it before I actually got it.</p>
+
+<p>It took me a while to read all the articles in the Internet about the camera until I decided to order one and took some notes with all the useful pieces of information that I found in the Internet with references for myself.</p>
+
+<p>But I think that it would be a good idea to share this list with you in random order as I noted (some notes may repeat). I hope you can find something new and useful there for you too.</p>
+
+
+		
+		<a href="/2013/11/24/fujifilm-x100s-tips-and-tricks/" class="more-link">Read on &rarr;</a>
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -448,63 +485,6 @@ If you are interested we can open source this Node.js SEO solution. Let me know 
 <p>Stay tuned to get updated on our progress as time goes by.</p>
 
 <p>Hope you enjoy the story. :)</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-05-08T22:35:00+03:00" data-updated="true" itemprop="datePublished">May 8<span>th</span>, 2013</time></div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2013/05/08/current-status-of-etoro-r-and-d/" itemprop="url">Current Status of eToro R&amp;D</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><img src="/images/eToro.jpg" alt="" /></p>
-
-<p>When I refer to current R&amp;D status, I refer to the situation which was relevant for about 3 months ago. Not that today it is very  different, but what started in <a href="http://www.etoro.com">eToro</a> 3 months ago I&#8217;m going to call the future of <a href="http://www.etoro.com">eToro</a> R&amp;D. And I&#8217;m going to cover it in next  post.</p>
-
-<p>Anyway, lets talk about the current R&amp;D status. We are big and we are getting bigger all the time. We are about 70 employees in R&amp;D (including developers, QA, DBAs and IT).</p>
-
-<p>We have migrated from SVN to Mercurial revision control system. SVN was really bad with dealing with branch merges. Openbook was a big team of 8 people and it was impossible to continue with SVN. We wanted to work using <a href="http://nvie.com/posts/a-successful-git-branching-model/">feature branch model</a>. Our only two candidates were Git and Mercurial, both are very similar and fit our needs. We chose Mercurial because we are using <a href="http://www.fogcreek.com/fogbugz/">FogBugz</a> as our bug tracking system and FogCreek released <a href="http://www.fogcreek.com/kiln/">Kiln</a>, a Mercurial server which has a tight integration with FogBugz.</p>
-
-<p>Shared static environments problems is a daily talk and everybody knows that dealing with configuration changes or fixing a broken environment can take hours, sometimes days. There is no integration environment where we can test cross R&amp;D developments. We have to work in the office, because we are dependant in our network, we have no mocks.</p>
-
-<p>We have a lot of dependencies, we wait for QA to finish, we wait for DBA to write the script, we wait for IT to deploy application, we wait for IT to see our logs in production in case of troubleshooting. We are doing blocking development.</p>
-
-<p>We have sort of monitoring in production using <a href="https://logentries.com/">LogEntries</a> and <a href="http://newrelic.com/">New Relic</a> which gives us more information, but we still can&#8217;t find the source of the problem when we have crisis.</p>
-
-<p>In the past year we slowly started to learn and implement Test Driven Development process in few teams, writing unit tests. Still not enough, product can hardly understand/feel the impact of these tests. Same goes with peer code reviews. We have no test automation at all, our manual regression test takes 3 days of 2 QA people.</p>
-
-<p>About a year ago we recruited configuration manager who started with build automation in teams. Nowadays most of the projects are built automatically. Deployments are still done manually to all environments.</p>
-
-<p>We have no performance test lab, but we already starting to feel the impact of customers growth in production. All the problems are found in productions.</p>
-
-<p>We have very few DBs, some are really big with a lot of shared objects, no APIs on shared objects. We have no scripts to create clean DB with just the schema. Our DBs should be separated to small DBs. DB revision control is awkward.</p>
-
-<p>In the last year we made a transition in most of the teams from Waterfall to Agile software development methodology. It gave us a new breath, short releases (once in 2-3 weeks), more visibility of the process, tools to measure the process and get improved. From other hand it also emphasized our downsides, our dependencies, risks we take. It is still hard to manage it, we have delays in iterations, we commit to stories which we don&#8217;t deliver and we deliver stories which we didn&#8217;t commit to.</p>
-
-<p>We feel that we are not scalable internally. We afraid to recruit another team member, because it won&#8217;t increase our performance, it will decrease it and I was able to prove that.</p>
-
-<p>It is a heavy and slow machine which can hardly move&#8230;</p>
-
-<p>P.S.
-Next post will be much more positive. ;)</p>
 
 		
 		
