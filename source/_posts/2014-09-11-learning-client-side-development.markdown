@@ -10,7 +10,7 @@ published: true
 
 Writing this post of good learning resources as a reference for myself. 
 
-The purpose is to refresh a memory, skills and get updated with latest technologies like  HTML5, CSS3 and JavaScript.
+The purpose is to refresh a memory, skills and get updated with latest technologies like  HTML5, CSS3 and AngularJS.
 
 ## HTML, CSS and JavaScript
 * [HTML Dog's HTML Beginner Tutorial](http://www.htmldog.com/guides/html/beginner/)
