@@ -10,8 +10,9 @@ published: true
 
 Writing this post of good learning resources as a reference for myself. 
 
-The purpose is to refresh my memory, skills and get updated with latest technologies like  HTML5, CSS3 and JavaScript.
+The purpose is to refresh a memory, skills and get updated with latest technologies like  HTML5, CSS3 and JavaScript.
 
+## HTML, CSS and JavaScript
 * [HTML Dog's HTML Beginner Tutorial](http://www.htmldog.com/guides/html/beginner/)
 * [DIVE INTO HTML5](http://diveintohtml5.info/)
 * [Learn CSS layout](http://learnlayout.com/)
@@ -20,5 +21,13 @@ The purpose is to refresh my memory, skills and get updated with latest technolo
 * [Dash by General Assembly](https://dash.generalassemb.ly/)
 * [Codecademy](http://www.codecademy.com) - lots of great courses on HTML, CSS, Javascript, JQuery.
 
+## AngularJS
+
+* [Learn to build an application using Angular.js
+](http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro)
+* [PhoneCat Tutorial App](https://docs.angularjs.org/tutorial) official Google tutorial.
+* [A Better Way to Learn AngularJS](https://thinkster.io/angulartutorial/a-better-way-to-learn-angularjs/) by thinkster.
+* [New to AngularJS? Start learning here
+](https://egghead.io/articles/new-to-angularjs-start-learning-here) by egghead.
 
 Feel free to suggest other resources. 
