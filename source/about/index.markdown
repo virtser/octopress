@@ -7,7 +7,9 @@ sharing: false
 footer: true
 ---
 
-Today I work at [eToro](http://etoro.com) as Infrastructure group leader, trying to hack the growth of eToro R&D with my team, optimize it, make it faster, make it scalable, work in DevOps culture. 
+Currently working as software engineering team lead on a very interesting project for Google. The challenge there is to build a new team from scratch and delvier.
+
+Before I worked at [eToro](http://etoro.com) as Infrastructure group leader, trying to hack the growth of eToro R&D with my team, optimize it, make it faster, make it scalable, work in DevOps culture. 
 
 I used to manage number of R&D teams including [Openbook](http://openbook.etoro.com) development and was web developer at my past. We are building the social investment network called [Openbook](http://openbook.etoro.com) which supposed to help people invest their money smartly. Working there is challenging, eToro is evolving, we need to think scale internally and externally.
 
