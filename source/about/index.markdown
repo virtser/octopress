@@ -7,7 +7,7 @@ sharing: false
 footer: true
 ---
 
-Currently working as software engineering team lead on a very interesting project for Google. The challenge there is to build a new team from scratch and delvier.
+Currently working as software engineering team lead on a very interesting project for Google. The challenge there is to build a new team from scratch and delvier great product.
 
 Before I worked at [eToro](http://etoro.com) as Infrastructure group leader, trying to hack the growth of eToro R&D with my team, optimize it, make it faster, make it scalable, work in DevOps culture. 
 
