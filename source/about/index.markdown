@@ -7,11 +7,9 @@ sharing: false
 footer: true
 ---
 
-Currently working as software engineering team lead on a very interesting project for Google. The challenge there is to build a new team from scratch and delvier great product.
+Currently working at [Spectory](http://www.spectory.com/en) as software engineering team lead on a very interesting project for Google. The challenge there is to form a new team from scratch and build a new strategic product.
 
-Before I worked at [eToro](http://etoro.com) as Infrastructure group leader, trying to hack the growth of eToro R&D with my team, optimize it, make it faster, make it scalable, work in DevOps culture. 
-
-I used to manage number of R&D teams including [Openbook](http://openbook.etoro.com) development and was web developer at my past. We are building the social investment network called [Openbook](http://openbook.etoro.com) which supposed to help people invest their money smartly. Working there is challenging, eToro is evolving, we need to think scale internally and externally.
+Before that I worked at [eToro](http://etoro.com) as Infrastructure group leader, trying to hack the growth of eToro R&D with my team, optimize it, make it faster, make it scalable, work in DevOps culture. I used to manage number of R&D teams and was web developer at my past. 
 
 I'm an enthusiast photographer. I have started my photography hobby about 10 years ago. I shoot mostly landscape and street photography. You can find my photos at [500px](http://500px.com/virtser) or on my [flickr](http://www.flickr.com/photos/poison-dv/) page. 
 
