@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2014-10-04T20:43:29+03:00</updated>
+  <updated>2014-10-04T20:53:13+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -18,7 +18,7 @@
     <link href="http://virtser.net/2014/10/04/google-culture/"/>
     <updated>2014-10-04T13:03:00+03:00</updated>
     <id>http://virtser.net/2014/10/04/google-culture</id>
-    <content type="html"><![CDATA[<p><img src="images/google.png" alt="" /></p>
+    <content type="html"><![CDATA[<p><img src="http://virtser.net/images/google.png" alt="" /></p>
 
 <p>Few weeks ago I joined <a href="http://www.spectory.com/en">Spectory</a>, a small projects outsourcing company with great culture and people.</p>
 
