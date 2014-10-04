@@ -6,7 +6,7 @@ comments: true
 published: true
 ---
 
-![](images/google.png)
+![](/images/google.png)
 
 Few weeks ago I joined [Spectory](http://www.spectory.com/en), a small projects outsourcing company with great culture and people.
 
