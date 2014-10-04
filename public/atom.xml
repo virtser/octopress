@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2014-09-16T08:35:36+03:00</updated>
+  <updated>2014-10-04T20:43:29+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Google Culture]]></title>
+    <link href="http://virtser.net/2014/10/04/google-culture/"/>
+    <updated>2014-10-04T13:03:00+03:00</updated>
+    <id>http://virtser.net/2014/10/04/google-culture</id>
+    <content type="html"><![CDATA[<p><img src="images/google.png" alt="" /></p>
+
+<p>Few weeks ago I joined <a href="http://www.spectory.com/en">Spectory</a>, a small projects outsourcing company with great culture and people.</p>
+
+<p>My job is to form and lead a new team of software engineers. Our mission is to build a new strategic product for Google using modern client side technologies.</p>
+
+<p>The challenge is huge - get to know new people (Spectory and Google), form a new team and build a new product.</p>
+
+<p>As part of my job, I&#8217;m and my team deployed at Google and working closely with Google teams and other vendors. We need to integrate well to make a progress.</p>
+
+<p>I wanted to share with you my observations of Google culture after few weeks of work. I share it because I think its interesting and some were surprisingly new for me:</p>
+
+<ol>
+<li><p>Work with a smile. Engineers, security guys, cooks and cleaning stuff  are nice. Everybody are willing to help and actually suggesting their help. I still didn&#8217;t hear someone rising their voice.</p></li>
+<li><p>Although we are sitting in an open space, it is pretty quite here. This is leading to productive and focused work.</p></li>
+<li><p>As a developer you get a very powerful machine. You can order any enhancement (keyboard, cables, headphones, etc..) that will make your work environment even more comfortable. Nobody will ask you to justify your order and you will receive it quickly.</p></li>
+<li><p>On your first month you have to learn a lot to get introduced with Google unique tools and standards. Google have a lot of great documentation resources like code labs, wiki and internal user groups.</p></li>
+<li><p>You have a lot of technologies and different tools you have to work with as engineer in Google. Engineers are free to choose which tools or technologies work best for them. Even every team can choose to develop their own work flow which suits best their culture and product they are working on.</p></li>
+<li><p>Requirements for new product development are usually not well defined. It&#8217;s customer, product and engineering team responsibility to brainstorm and finalize it. Engineers have a lot of power to decide on product development paths and priorities.</p></li>
+<li><p>Although it is an enterprise sometimes with its bureaucracy and politics, each team operates like a small start up. Trying to be as lean and iterative as possible delivering value fast to customers.</p></li>
+<li><p>Last and most important aspect of this culture is the great professional  engineers working here. I think it wouldn&#8217;t be possible to build such culture without the people who get a lot of responsibility here.</p></li>
+</ol>
+
+
+<p>To be continued&#8230;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[What have I learned from looking for a new job]]></title>
@@ -682,17 +715,6 @@ If you have more tips &amp; tricks to add to the list, please leave in comments.
 
 <p>P.S.
 If you are interested we can open source this Node.js SEO solution. Let me know in comments.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[eToro is looking for DevOps engineers]]></title>
-    <link href="http://virtser.net/2013/05/29/etoro-is-looking-for-devops-engineers/"/>
-    <updated>2013-05-29T21:34:00+03:00</updated>
-    <id>http://virtser.net/2013/05/29/etoro-is-looking-for-devops-engineers</id>
-    <content type="html"><![CDATA[<p>If you are open minded, have a vision and potential, got wide process understanding, passionate about building CI/CD process, don&#8217;t afraid of writing code (hacking), like to explore new domains, don&#8217;t want to manage people, like challenges, understand DevOps culture, live in Israel and have experience in Dev, DBA, IT, Ops or CM - <a href="http://www.etoro.com">eToro</a> is looking for you!</p>
-
-<p>Please comment with questions or <a href="http://virtser.net/about">contact me</a> in private.</p>
 ]]></content>
   </entry>
   

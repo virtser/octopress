@@ -7,7 +7,7 @@
 	<meta name="author" content="David Virtser">
 
 	
-	<meta name="description" content="Sep 15th, 2014 What Have I Learned From Looking for a New Job I left eToro about 2 months ago and started to look for a new challenge. It was my &hellip;">
+	<meta name="description" content="Oct 4th, 2014 Google Culture Few weeks ago I joined Spectory, a small projects outsourcing company with great culture and people. My job is to form &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,58 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-04T13:03:00+03:00" data-updated="true" itemprop="datePublished">Oct 4<span>th</span>, 2014</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2014/10/04/google-culture/" itemprop="url">Google Culture</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="images/google.png" alt="" /></p>
+
+<p>Few weeks ago I joined <a href="http://www.spectory.com/en">Spectory</a>, a small projects outsourcing company with great culture and people.</p>
+
+<p>My job is to form and lead a new team of software engineers. Our mission is to build a new strategic product for Google using modern client side technologies.</p>
+
+<p>The challenge is huge - get to know new people (Spectory and Google), form a new team and build a new product.</p>
+
+<p>As part of my job, I&#8217;m and my team deployed at Google and working closely with Google teams and other vendors. We need to integrate well to make a progress.</p>
+
+<p>I wanted to share with you my observations of Google culture after few weeks of work. I share it because I think its interesting and some were surprisingly new for me:</p>
+
+<ol>
+<li><p>Work with a smile. Engineers, security guys, cooks and cleaning stuff  are nice. Everybody are willing to help and actually suggesting their help. I still didn&#8217;t hear someone rising their voice.</p></li>
+<li><p>Although we are sitting in an open space, it is pretty quite here. This is leading to productive and focused work.</p></li>
+<li><p>As a developer you get a very powerful machine. You can order any enhancement (keyboard, cables, headphones, etc..) that will make your work environment even more comfortable. Nobody will ask you to justify your order and you will receive it quickly.</p></li>
+<li><p>On your first month you have to learn a lot to get introduced with Google unique tools and standards. Google have a lot of great documentation resources like code labs, wiki and internal user groups.</p></li>
+<li><p>You have a lot of technologies and different tools you have to work with as engineer in Google. Engineers are free to choose which tools or technologies work best for them. Even every team can choose to develop their own work flow which suits best their culture and product they are working on.</p></li>
+<li><p>Requirements for new product development are usually not well defined. It&#8217;s customer, product and engineering team responsibility to brainstorm and finalize it. Engineers have a lot of power to decide on product development paths and priorities.</p></li>
+<li><p>Although it is an enterprise sometimes with its bureaucracy and politics, each team operates like a small start up. Trying to be as lean and iterative as possible delivering value fast to customers.</p></li>
+<li><p>Last and most important aspect of this culture is the great professional  engineers working here. I think it wouldn&#8217;t be possible to build such culture without the people who get a lot of responsibility here.</p></li>
+</ol>
+
+
+<p>To be continued&#8230;</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -466,62 +518,6 @@
 
 		
 		<a href="/2014/02/04/why-graphite/" class="more-link">Read on &rarr;</a>
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-01-28T20:41:00+02:00" data-updated="true" itemprop="datePublished">Jan 28<span>th</span>, 2014</time></div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2014/01/28/api-implementation/" itemprop="url">API Implementation</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><img src="/images/api.gif" alt="" /></p>
-
-<p>We are in the process of building of solid APIs for each of <a href="http://www.etoro.com/">eToro</a> main domains. It is not an easy task at all, as we didn&#8217;t invest too much in the past 7 years of eToro existence in all the architectural aspects of the system.</p>
-
-<p>How services interact with each other? Who is responsible of doing what? What are the standards that we are working with? Which tools or technology do we choose for specific task? All these questions were not answered until now. Today we start to talk and think about it along with progressing with our first real API - <strong>User API</strong>. It is the place where it all begins - user created for the first time, user details updated, etc&#8230;</p>
-
-<p>Today we still have one Users table in our big database which holds all our customer records in addition to their basic details and more irrelevant to user stuff. Each application can update (or read) this table from code without going through a dedicated API. The problem with this approach is that there is no <a href="http://en.wikipedia.org/wiki/Single_Source_of_Truth">single source of truth</a> - each and every service can apply its own business logic to change user related data, which leading to data inconsistency.</p>
-
-<p>I&#8217;m taking active role of product/project manager for this API and leading the integration process with teams. Our main goals we want to achieve by User API implementation are:</p>
-
-<ol>
-<li><p>Create the &#8220;Single Source of Truth&#8221;. All the requests to register user, update it&#8217;s details or get data of some user will pass through one API which hold the business logic of the user domain. We love <a href="https://servicestack.net/">ServiceStack</a> and we are using their framework for our REST APIs.</p></li>
-<li><p>Provide notifications of user changes to different services via Pub/Sub instead of polling database for changes like we do today. We are using <a href="http://www.rabbitmq.com/">RabbitMQ</a> messaging here.</p></li>
-<li><p>Separate User related data to it&#8217;s own dedicated database. This to isolate and encapsulate the user domain better. It will help in many aspects - automatic deployment of database changes with CD process, creation of environments with empty user database, other services won&#8217;t effect this database performance and vice versa. We are working with <a href="http://msdn.microsoft.com/en-us/data/tools.aspx">Microsoft SQL Server Data Tools</a> to accompish this</p></li>
-</ol>
-
-
-<p>Today the User API is almost ready, but can&#8217;t be completed because we need to migrate all the clients to use it instead of DB first. After all the clients which update customer records migrate, we will be able to enable caching, provide Pub/Sub functionality which can be trusted and eventually take out the user data our of the main DB to a dedicated one.</p>
-
-<p>Lessons learned so far during the API building and integration process:</p>
-
-<ol>
-<li><p>Don&#8217;t start it when it&#8217;s too late - invest in your architecture from the beginning or at least think about it. Now it takes so many time to make the integration and fix things which were done wrongly in the past.</p></li>
-<li><p>Build a good plan - development plan (phases: establishment, optimization), integration plan (insert, update, select).</p></li>
-<li><p>Don&#8217;t try to fix all evil at once, do it in small chunks, work iteratively. Otherwise it will hurt, it will bring more risk to migration.</p></li>
-<li><p>Explain the importance of this move to the company - management and developers. It is required for engagement of people to give higher priority for integration than any other tasks.</p></li>
-<li><p>Communication and follow up of progress are important to make the development and migration as fast as possible. You don&#8217;t want this project to take a lifetime.</p></li>
-</ol>
-
-
-		
-		
 	</div>
 
 </article>
