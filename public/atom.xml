@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2014-10-04T21:52:50+03:00</updated>
+  <updated>2014-12-15T08:46:59+02:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Spotify engineering culture]]></title>
+    <link href="http://virtser.net/2014/12/15/spotify-engineering-culture/"/>
+    <updated>2014-12-15T08:43:00+02:00</updated>
+    <id>http://virtser.net/2014/12/15/spotify-engineering-culture</id>
+    <content type="html"><![CDATA[<p>I&#8217;m just going to put it here, as some great engineering culture references I beleve in:</p>
+
+<iframe src="http://virtser.net//player.vimeo.com/video/85490944" width="600" height="412" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+
+
+<iframe src="http://virtser.net//player.vimeo.com/video/94950270" width="600" height="412" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Google Culture]]></title>
@@ -692,29 +709,6 @@ If you have more tips &amp; tricks to add to the list, please leave in comments.
 <p><a href="http://www.youtube.com/watch?v=LCZT_Q3z520&amp;list=SP055Epbe6d5bdB4KPqssegVpYUDJXSzOp&amp;index=12">Gamedays on the Obama Campaign</a></p>
 
 <p>That&#8217;s it for today. See you at <a href="http://devopsdays.org/events/2013-telaviv/">DevOpsDays Tel-Aviv</a>. eToro is going to sponsor this event and hopefully we will be able to present our journey there.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[eToro Openbook SEO Implementation]]></title>
-    <link href="http://virtser.net/2013/06/06/etoro-openbook-seo/"/>
-    <updated>2013-06-06T20:05:00+03:00</updated>
-    <id>http://virtser.net/2013/06/06/etoro-openbook-seo</id>
-    <content type="html"><![CDATA[<p>Sometimes in eToro we are doing really innovative and beautiful things.</p>
-
-<p>In our <a href="https://openbook.etoro.com">Openbook</a> web application most of the calls are executed on client side using Ajax. Which means that our pages content is  changing dynamically. Google bots can index static content pages only.</p>
-
-<p>It was a challenge to find a good and easy to implement solution which required minimum of changes on <a href="https://openbook.etoro.com">Openbook</a> itslef.</p>
-
-<p>Find below the presentation explaining our solution:</p>
-
-<iframe src="http://prezi.com/embed/8jncrjqi204a/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="600" height="400" frameBorder="0"></iframe>
-
-
-<p>All the credits for the presentation goes to Omry Hay, for design to <a href="http://gal-segal.net">Gal Segal</a> &amp; Shlomi Shemesh and for implementation to Shomi Shemesh, the one and only!</p>
-
-<p>P.S.
-If you are interested we can open source this Node.js SEO solution. Let me know in comments.</p>
 ]]></content>
   </entry>
   
