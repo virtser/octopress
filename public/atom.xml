@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2015-01-26T09:20:54+02:00</updated>
+  <updated>2015-04-03T14:14:41+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,124 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iVote]]></title>
+    <link href="http://virtser.net/2015/04/03/ivote/"/>
+    <updated>2015-04-03T14:08:00+03:00</updated>
+    <id>http://virtser.net/2015/04/03/ivote</id>
+    <content type="html"><![CDATA[<p><img src="http://virtser.net/images/ivote.jpeg" alt="" /></p>
+
+<p>A story about group of people who were passionate enough to try and make a change in Israeli elections process.</p>
+
+<p><strong>TL;DR</strong> We successfully built a social voting application in few days of work in our spare time. Released it two weeks before recent elections in Israel and got 12,000 people registered and voted in that period. All by using viral Facebook marketing.</p>
+
+<!-- more -->
+
+
+<p>It was a crazy idea of Tal Ben-Simon (VP Product of <a href="http://www.etoro.com/">eToro</a>), which he speeches me in the park. An idea to build a simple mobile application which is going to let people connect with their Facebook account, make their vote and see whom their friends has voted. All privately and anonymously of course.</p>
+
+<p><img src="http://virtser.net/images/ivote_screen1.png" alt="" /></p>
+
+<p><img src="http://virtser.net/images/ivote_screen2.png" alt="" /></p>
+
+<p>In addition there is a campaigns section where you can write to your friends and try to influence them.</p>
+
+<p><img src="http://virtser.net/images/ivote_screen3.png" alt="" /></p>
+
+<p>It doesn&#8217;t matter which political views you have. We built an application which is completely anonymous and it is not biased by any political movement. The goal of the application is to help you decide which party to give your vote for.</p>
+
+<h4>The team</h4>
+
+<p>We were few ex eTorians (Tal Ben-Simon, Orel Assia, Avner Sorek, Eyal Weiss, Lior Hakim and myself), who wanted to contribute, but not all of us had the time to do it. In addition Israel Roth (Co-Founder &amp; CTO at Labgoo) and Yosi Konigsberg joined this development effort. Guy Spigelman (CEO Israel at PresenTense) helped with marketing efforts.</p>
+
+<p><strong>Tal </strong>was the product manager.<br/>
+<strong>Orel</strong> was our UX/UI expert and designer.<br/>
+<strong>Israel</strong> was responsible of native mobile integration and applications.<br/>
+<strong>Yosi</strong>, <strong>Lior</strong> and <strong>Eyal</strong> covered the client side.<br/>
+<strong>Avner</strong> helped developing sharing of results page using <a href="http://phantomjs.org/">PhantomJS</a>.<br/>
+I was responsible of back-end, API, Database and Infrastructure.</p>
+
+<p><strong>Guy</strong> who helped with marketing after release.</p>
+
+<h4>The plan</h4>
+
+<p>We started talking about this project three months before the elections, but couldn&#8217;t start building it as there was no clear development plan and the team wasn&#8217;t finalized yet. It was the same situation a month before the elections too, when Tal, Israel and myself just agreed and decided that if we don&#8217;t start now we won&#8217;t make it happen.</p>
+
+<p>And that exactly what we did. Tal and Orel started to work on UI to make sure all materials are available upfront, before development start. I created technical design document, development plan and assigned tasks to team members by the level of their expertise.</p>
+
+<p>We decided to build a hybrid web application and wrap it with mobile native wrapper. The app should work from modern desktop browsers (IE 9+), Android native and iPhone native apps.</p>
+
+<h4>Tech stack &amp; Infrastructure</h4>
+
+<p>As we were very short on time, the goal was to build application with minimum efforts, iteratively. Try to use SaaS as much as possible and base tech stack on our own skillset.</p>
+
+<p>What was eventually chosen:</p>
+
+<p><strong>Source control</strong> — <a href="https://bitbucket.org/">Bitbucket</a><br/>
+<strong>Cloud hosting</strong> — <a href="https://dashboard.heroku.com/apps/ivoteorgil/resources">Heroku</a><br/>
+<strong>Database</strong> — PostgreSQL<br/>
+<strong>Back-end</strong> — <a href="http://rubyonrails.org/">Ruby on Rails</a><br/>
+<strong>Front-end</strong> — <a href="https://angularjs.org/">AngularJS</a> + <a href="http://ionicframework.com/">ionic</a> framework.<br/>
+<strong>Social feed</strong> — <a href="http://getstream.io/">Stream</a><br/>
+<strong>Mobile wrapper</strong> — <a href="http://cordova.apache.org/">Cordova</a><br/>
+<strong>Mobile Push</strong> <strong>notifications</strong> — <a href="https://www.pushwoosh.com/">Pushwoosh</a><br/>
+<strong>Email notifications</strong> — <a href="https://mandrill.com/">Mandrill</a><br/>
+<strong>Tracking</strong> — <a href="http://www.google.com/analytics/">Google Analytics</a>, <a href="https://mixpanel.com/">Mixpanel</a><br/>
+<strong>Tasks management</strong> — <a href="https://trello.com/">Trello</a></p>
+
+<h4>Architecture diagram</h4>
+
+<p>The architecture was very simple:</p>
+
+<p><img src="http://virtser.net/images/ivote_screen4.png" alt="" /></p>
+
+<h4>How we did it</h4>
+
+<p>It is important to state, that all of us did this project as side, non profit project, while working full time in other jobs.</p>
+
+<p>So we did few hackathons during weekends and few sleepless nights to make a progress. And two weeks before the elections, when we almost lost our hope to release something, we finally were ready to release our first desktop web application. Followed by Android mobile version few days later. We dropped iOS version as we had no more time to do it and considering the long approval process.</p>
+
+<p>Then Tal <a href="https://www.facebook.com/tal.bensimon/posts/10152703546392011?pnref=story">wrote his first iVote post</a> in Facebook which got shared <strong>82 times</strong>! This is how it became viral. Most of our traffic came from Facebook without spending a dime. We saw and felt that people like it. We got a lot of traffic coming in our first days and got about 5,000 users registered a week after launch.</p>
+
+<p>Now we started to monitor closely our traffic and performance. We had to do some refactoring to be more scalable.</p>
+
+<h4>Statistics</h4>
+
+<p>And after two weeks, just on elections day we had the following numbers:</p>
+
+<p>-<strong> 30,000 </strong>unique users visited the website.<strong> - 12,000 </strong>registered users.<br/>
+- <strong>11,500</strong> votes.<br/>
+- <strong>200</strong> likes in our <a href="https://www.facebook.com/ivote2015">Facebook page</a>.<br/>
+- <strong>5</strong> articles published in online media.</p>
+
+<p>Google Analytics stats:</p>
+
+<p><img src="http://virtser.net/images/ivote_screen5.png" alt="" /></p>
+
+<h4>Articles published in online media</h4>
+
+<ol>
+<li><a href="https://www.facebook.com/wallanews/photos/a.135402296495977.11530.135130956523111/845191165517083/?type=1&amp;fref=nf">Walla News</a> and <a href="http://tech.walla.co.il/item/2835923">Walla Tech</a></li>
+<li><a href="http://www.globes.co.il/news/article.aspx?did=1001016577#fromelement=hp_morearticles">Globes</a></li>
+<li><a href="http://www.haaretz.co.il/news/elections/ratz/.premium-1.2584949?&amp;ts=_1425986710325">Haaretz</a></li>
+<li><a href="http://www.mako.co.il/nexter-cellular/apps/Article-44c06fc793e0c41006.htm?sCh=3d385dd2dd5d4110&amp;pId=757332771">Mako</a></li>
+<li><a href="http://www.israelnationalnews.com/News/News.aspx/192422#.VRB785OUem1">Arutz Sheva</a></li>
+</ol>
+
+
+<h4>Wrapping up</h4>
+
+<p>It was a crazy, both challenging and enjoyable journey. I had the opportunity to work again with people I love and meet new people I never had the chance to work with. Get more information and experience on mobile web and native development.</p>
+
+<p>If you want to see the web app in action, the main website is located here:<a href="https://ivote.org.il/">https://ivote.org.il</a></p>
+
+<p>And remember that “I have no time” is a lame excuse. If you really want it, you will make a time. Sleep less, do more. ☺</p>
+
+<p>P.S.<br/>
+<em>* The source code can be found </em><a href="https://github.com/virtser/ivote"><em>here</em></a><em>. If you want to make the same experiment in your country, please contact me. We will try to help.</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[WTFs/minute]]></title>
@@ -660,20 +778,6 @@ If you have more tips &amp; tricks to add to the list, please leave in comments.
 
 
 <p>We still have a very long way full of challenges in front of us to get to CD, but the train left a station…</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Mercurial over Kiln tips and tricks]]></title>
-    <link href="http://virtser.net/2013/07/23/mercurial-over-kiln-tips-and-tricks/"/>
-    <updated>2013-07-23T22:35:00+03:00</updated>
-    <id>http://virtser.net/2013/07/23/mercurial-over-kiln-tips-and-tricks</id>
-    <content type="html"><![CDATA[<p>I want to share with you the slides that I created and presented to eToro R&amp;D to get introduced with more advanced features and options of Mercurial and Kiln.</p>
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/22784525" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen webkitallowfullscreen mozallowfullscreen> </iframe>
-
-
-<p>Hope you find it helpful.</p>
 ]]></content>
   </entry>
   
