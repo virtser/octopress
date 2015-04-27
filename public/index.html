@@ -7,7 +7,7 @@
 	<meta name="author" content="David Virtser">
 
 	
-	<meta name="description" content="Apr 3rd, 2015 iVote A story about group of people who were passionate enough to try and make a change in Israeli elections process. TL;DR We &hellip;">
+	<meta name="description" content="Apr 19th, 2015 Jasmine Testing Tips If you are developing web application and you are working on client side, I hope you write unit tests or test &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,65 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-04-19T19:15:00+03:00" data-updated="true" itemprop="datePublished">Apr 19<span>th</span>, 2015</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2015/04/19/jasmine-testing-tips/" itemprop="url">Jasmine Testing Tips</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>If you are developing web application and you are working on client side, I hope you write unit tests or test automation. The following tips might be helpful if you write your tests using <a href="http://jasmine.github.io/">Jasmine</a> and execute it with <a href="http://karma-runner.github.io/">Karma</a> or <a href="http://angular.github.io/protractor/">Protractor</a>.</p>
+
+<p>I guess you know that if you want to disable a specific test you can add &#8220;x&#8221; before <em>describe</em> or <em>it</em> statements? Like that:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>xdescribe('my beautiful function', function() {
+</span><span class='line'> xit('having fun', function() {
+</span><span class='line'>
+</span><span class='line'> });
+</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Did you also know that if you add &#8220;d&#8221; before <em>describe</em> or &#8220;i&#8221; before <em>it</em>, it will run only this specific test and skip the others? So you can focus on debugging specific test:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ddescribe('my beautiful function', function() {
+</span><span class='line'> iit('having fun', function() {
+</span><span class='line'>
+</span><span class='line'> });
+</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Hope you liked it.
+If you have more tips to share, please do.</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -435,42 +494,6 @@ The only valid measurement of code quality: WTFs/minute.</p>
 <p>It is called <strong>APPLENIUM</strong> (<a href="http://appium.io/">APPium</a> + <a href="http://www.seleniumhq.org/">seLENIUM</a>) and it uses Appium and Selenium frameworks as helpers to make mobile and web testing easy.</p>
 
 <p>Find the <a href="https://github.com/bobmarthin/Applenium">source code</a> or get more information about it on his <a href="http://applenium.blogspot.com">blog</a>.</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-07-31T17:30:00+03:00" data-updated="true" itemprop="datePublished">Jul 31<span>st</span>, 2014</time></div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2014/07/31/popular-programming-languages-in-israel/" itemprop="url">Popular Programming Languages in Israel</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>Some interesting numbers based on my LinkedIn research I did related to  choosing startup technology stack considering current situation on local market.</p>
-
-<p><img src="https://pbs.twimg.com/media/Bt4SrvoIgAAlnQX.png:large" alt="" /></p>
-
-<p>To get the data I just used Linked search and gave programming language name as keyword and filtered the results by location.</p>
-
-<p>Hope you find it interesting and useful for you.</p>
-
-<p>Do you think LinkedIn reflect the reality? Let me know what you think.</p>
 
 		
 		

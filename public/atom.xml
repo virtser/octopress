@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2015-04-03T14:14:41+03:00</updated>
+  <updated>2015-04-27T21:11:35+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,46 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Jasmine testing tips]]></title>
+    <link href="http://virtser.net/2015/04/19/jasmine-testing-tips/"/>
+    <updated>2015-04-19T19:15:00+03:00</updated>
+    <id>http://virtser.net/2015/04/19/jasmine-testing-tips</id>
+    <content type="html"><![CDATA[<p>If you are developing web application and you are working on client side, I hope you write unit tests or test automation. The following tips might be helpful if you write your tests using <a href="http://jasmine.github.io/">Jasmine</a> and execute it with <a href="http://karma-runner.github.io/">Karma</a> or <a href="http://angular.github.io/protractor/">Protractor</a>.</p>
+
+<p>I guess you know that if you want to disable a specific test you can add &#8220;x&#8221; before <em>describe</em> or <em>it</em> statements? Like that:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>xdescribe('my beautiful function', function() {
+</span><span class='line'> xit('having fun', function() {
+</span><span class='line'>
+</span><span class='line'> });
+</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Did you also know that if you add &#8220;d&#8221; before <em>describe</em> or &#8220;i&#8221; before <em>it</em>, it will run only this specific test and skip the others? So you can focus on debugging specific test:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ddescribe('my beautiful function', function() {
+</span><span class='line'> iit('having fun', function() {
+</span><span class='line'>
+</span><span class='line'> });
+</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Hope you liked it.
+If you have more tips to share, please do.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iVote]]></title>
@@ -764,20 +804,6 @@ If you have more tips &amp; tricks to add to the list, please leave in comments.
 <p>I know it&#8217;s not much, but considering our current size and cultural gaps we had, I&#8217;m very satisfied!</p>
 
 <p>Only this month we finally completed the recruitment of DevOps team.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Continuous Delivery Vision]]></title>
-    <link href="http://virtser.net/2013/08/14/continuous-delivery-vision/"/>
-    <updated>2013-08-14T19:27:00+03:00</updated>
-    <id>http://virtser.net/2013/08/14/continuous-delivery-vision</id>
-    <content type="html"><![CDATA[<p>Find below a presentation of eToro Continuous Delivery vision as recently composed and presented by our CD leader <a href="https://twitter.com/alonbecker">Alon Becker</a>.</p>
-
-<iframe src="http://prezi.com/embed/kinvydtyaj4p/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="600" height="400" frameBorder="0"></iframe>
-
-
-<p>We still have a very long way full of challenges in front of us to get to CD, but the train left a station…</p>
 ]]></content>
   </entry>
   
