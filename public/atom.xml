@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2015-04-27T21:11:35+03:00</updated>
+  <updated>2015-04-27T21:41:48+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -18,9 +18,9 @@
     <link href="http://virtser.net/2015/04/19/jasmine-testing-tips/"/>
     <updated>2015-04-19T19:15:00+03:00</updated>
     <id>http://virtser.net/2015/04/19/jasmine-testing-tips</id>
-    <content type="html"><![CDATA[<p>If you are developing web application and you are working on client side, I hope you write unit tests or test automation. The following tips might be helpful if you write your tests using <a href="http://jasmine.github.io/">Jasmine</a> and execute it with <a href="http://karma-runner.github.io/">Karma</a> or <a href="http://angular.github.io/protractor/">Protractor</a>.</p>
+    <content type="html"><![CDATA[<p>If you are developing web application and you are working on client side, I hope you write unit tests or test automation or even both like we do. The following tips might be helpful if you write your tests using <a href="http://jasmine.github.io/">Jasmine</a> and execute it with <a href="http://karma-runner.github.io/">Karma</a> or <a href="http://angular.github.io/protractor/">Protractor</a>.</p>
 
-<p>I guess you know that if you want to disable a specific test you can add &#8220;x&#8221; before <em>describe</em> or <em>it</em> statements? Like that:</p>
+<p>I guess you already know that if you want to disable a specific test you can add &#8220;x&#8221; before <em>describe</em> or <em>it</em> statements?</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -34,7 +34,7 @@
 </span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Did you also know that if you add &#8220;d&#8221; before <em>describe</em> or &#8220;i&#8221; before <em>it</em>, it will run only this specific test and skip the others? So you can focus on debugging specific test:</p>
+<p>Did you also know that if you add &#8220;d&#8221; before <em>describe</em> or &#8220;i&#8221; before <em>it</em>, it will run only this specific test and skip the others?</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -47,6 +47,8 @@
 </span><span class='line'> });
 </span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
 
+
+<p>This is especially helpful when you need to focus on debugging specific test.</p>
 
 <p>Hope you liked it.
 If you have more tips to share, please do.</p>
