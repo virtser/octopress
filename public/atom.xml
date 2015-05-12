@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2015-04-27T21:41:48+03:00</updated>
+  <updated>2015-05-12T12:06:47+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[bash tips]]></title>
+    <link href="http://virtser.net/2015/05/12/bash-tips/"/>
+    <updated>2015-05-12T11:14:00+03:00</updated>
+    <id>http://virtser.net/2015/05/12/bash-tips</id>
+    <content type="html"><![CDATA[<p><img src="http://virtser.net/images/bash.jpg" alt="" /></p>
+
+<p>I wanted to share few Linux bash (terminal) tips I found to be useful for me over the last year.</p>
+
+<h1>1. Commands</h1>
+
+<p><strong>cd -</strong> goes back to previous directory you have been at. useful when you accidentally switch to root dir for example.<br/>
+<strong>!!</strong> - repeats your last command. most useful if you forgot to add sudo to last command: sudo !!<br/>
+<strong>fuser -k tcp/8080</strong> - to find and kill a process which is using port 8080.<br/>
+<strong>history</strong>  - shows you the history of commands you executed)<br/>
+<strong>history | grep &#8216;git&#8217;</strong>  - will show you all the history items with word &#8216;git&#8217; in it</p>
+
+<p>And now try <strong>Ctrl-R</strong> in terminal to open history search and type the desired search pattern.</p>
+
+<p>I&#8217;m sure you know that <strong>Ctrl-C</strong> cancels a process execution. Did you also know that <strong>Ctrl-Z</strong> pauses a process by putting it in background and releasing a prompt for you? To bring back the paused process type <strong>fg</strong> (ForeGround).</p>
+
+<h1>2. Aliases</h1>
+
+<p>You can also set some aliases for your most used commands in <strong>~/.bashrc</strong> file:</p>
+
+<p>My aliases are:</p>
+
+<p><strong>alias ll=&#8217;ls -alF&#8217;<br/>
+alias la=&#8217;ls -A&#8217;<br/>
+alias l=&#8217;ls -CF&#8217;<br/>
+alias cd..=&#8221;cd ..&#8221;<br/>
+alias node=&#8217;nodejs&#8217;<br/>
+alias s=&#8217;http-server -o -cors&#8217;</strong></p>
+
+<h1>3. Prompt</h1>
+
+<p>As well as define custom prompt colors and git branch you are working on, like I have for example:</p>
+
+<p><img src="http://virtser.net/images/bash2.png" alt="" /></p>
+
+<p>More details on how to do it <a href="http://code-worrier.com/blog/git-branch-in-bash-prompt">here</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Jasmine testing tips]]></title>
@@ -789,23 +833,6 @@ If you have more tips &amp; tricks to add to the list, please leave in comments.
 <p>If you have some questions or want to talk about DevOps implementation process in medium size organization, don&#8217;t hesitate to contact me.</p>
 
 <p>Our speech recording will follow.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[eToro DevOps Progress]]></title>
-    <link href="http://virtser.net/2013/09/19/etoro-devops-progress/"/>
-    <updated>2013-09-19T14:01:00+03:00</updated>
-    <id>http://virtser.net/2013/09/19/etoro-devops-progress</id>
-    <content type="html"><![CDATA[<p>A little spoiler for our <a href="http://devopsdays.org/events/2013-telaviv/">DevOpsDays TLV</a> presentation which is going to take place 30 Sep - 01 Oct. :)</p>
-
-<p>I want to share with you one slide of eToro DevOps progress in the last 4 months:</p>
-
-<p><img src="http://virtser.net/images/devopsprogress.png" alt="" /></p>
-
-<p>I know it&#8217;s not much, but considering our current size and cultural gaps we had, I&#8217;m very satisfied!</p>
-
-<p>Only this month we finally completed the recruitment of DevOps team.</p>
 ]]></content>
   </entry>
   

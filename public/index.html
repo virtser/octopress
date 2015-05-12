@@ -7,7 +7,7 @@
 	<meta name="author" content="David Virtser">
 
 	
-	<meta name="description" content="Apr 19th, 2015 Jasmine Testing Tips If you are developing web application and you are working on client side, I hope you write unit tests or test &hellip;">
+	<meta name="description" content="May 12th, 2015 Bash Tips I wanted to share few Linux bash (terminal) tips I found to be useful for me over the last year. 1. Commands cd - goes back &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,69 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-12T11:14:00+03:00" data-updated="true" itemprop="datePublished">May 12<span>th</span>, 2015</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2015/05/12/bash-tips/" itemprop="url">Bash Tips</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="/images/bash.jpg" alt="" /></p>
+
+<p>I wanted to share few Linux bash (terminal) tips I found to be useful for me over the last year.</p>
+
+<h1>1. Commands</h1>
+
+<p><strong>cd -</strong> goes back to previous directory you have been at. useful when you accidentally switch to root dir for example.<br/>
+<strong>!!</strong> - repeats your last command. most useful if you forgot to add sudo to last command: sudo !!<br/>
+<strong>fuser -k tcp/8080</strong> - to find and kill a process which is using port 8080.<br/>
+<strong>history</strong>  - shows you the history of commands you executed)<br/>
+<strong>history | grep &#8216;git&#8217;</strong>  - will show you all the history items with word &#8216;git&#8217; in it</p>
+
+<p>And now try <strong>Ctrl-R</strong> in terminal to open history search and type the desired search pattern.</p>
+
+<p>I&#8217;m sure you know that <strong>Ctrl-C</strong> cancels a process execution. Did you also know that <strong>Ctrl-Z</strong> pauses a process by putting it in background and releasing a prompt for you? To bring back the paused process type <strong>fg</strong> (ForeGround).</p>
+
+<h1>2. Aliases</h1>
+
+<p>You can also set some aliases for your most used commands in <strong>~/.bashrc</strong> file:</p>
+
+<p>My aliases are:</p>
+
+<p><strong>alias ll=&#8217;ls -alF&#8217;<br/>
+alias la=&#8217;ls -A&#8217;<br/>
+alias l=&#8217;ls -CF&#8217;<br/>
+alias cd..=&#8221;cd ..&#8221;<br/>
+alias node=&#8217;nodejs&#8217;<br/>
+alias s=&#8217;http-server -o -cors&#8217;</strong></p>
+
+<h1>3. Prompt</h1>
+
+<p>As well as define custom prompt colors and git branch you are working on, like I have for example:</p>
+
+<p><img src="/images/bash2.png" alt="" /></p>
+
+<p>More details on how to do it <a href="http://code-worrier.com/blog/git-branch-in-bash-prompt">here</a>.</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -464,38 +527,6 @@ The only valid measurement of code quality: WTFs/minute.</p>
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/iBhpSyn7UmM?rel=0" frameborder="0" allowfullscreen></iframe>
 
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-08-27T12:08:00+03:00" data-updated="true" itemprop="datePublished">Aug 27<span>th</span>, 2014</time></div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2014/08/27/applenium/" itemprop="url">Applenium</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>I just wanted to tell you about a very cool and groundbreaking test automation UI which was developed by <a href="https://twitter.com/maximguenis">Maxim Guienis</a>, my friend from eToro. It was designed for specific eToro needs to provide an easy &#8220;wizard like&#8221; tool for QA to write automatic UI tests.</p>
-
-<p>It is called <strong>APPLENIUM</strong> (<a href="http://appium.io/">APPium</a> + <a href="http://www.seleniumhq.org/">seLENIUM</a>) and it uses Appium and Selenium frameworks as helpers to make mobile and web testing easy.</p>
-
-<p>Find the <a href="https://github.com/bobmarthin/Applenium">source code</a> or get more information about it on his <a href="http://applenium.blogspot.com">blog</a>.</p>
 
 		
 		
