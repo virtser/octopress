@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2015-05-12T12:06:47+03:00</updated>
+  <updated>2015-05-13T12:33:22+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How I recruited test automation engineer]]></title>
+    <link href="http://virtser.net/2015/05/13/how-i-recruited-test-automation-engineer/"/>
+    <updated>2015-05-13T11:20:00+03:00</updated>
+    <id>http://virtser.net/2015/05/13/how-i-recruited-test-automation-engineer</id>
+    <content type="html"><![CDATA[<p><img src="http://virtser.net/images/test_automation.jpg" alt="" /></p>
+
+<p>Before we begin, I just want to make sure that we are on the same page about what is  &#8220;Test Automation&#8221;. For me, it is a way to automatically validate that a real user experiencing the predicted application behaviour. For example: User click on a button which should open a new window. In this case we need to automatically validate that user is able to click a button and a window will show up with predefined text. <a href="http://en.wikipedia.org/wiki/Test_automation">Wikipedia: Test automation</a></p>
+
+<p>Ideally, I wouldn&#8217;t recruit a test automation engineer at all. I beleive that software engineers should be capable to test their own code (as part of &#8221;<a href="http://en.wikipedia.org/wiki/Eating_your_own_dog_food">eat your own dog food</a>&#8221; concept) by writing unit, integration or end to end tests. It makes even a higher level of bond to the code that you are developing and need to maintain in the future.</p>
+
+<p>But in reality, there are many reasons that might prevent you from living without QA position at all. It could be a culture of the organization that you are working in, legacy code that you need to deal with, could be the product nature that you are developing and etc&#8230; Moreover, you might need someone to own quality control in your organization.</p>
+
+<p>My team was missing a QA person to take control of the product quality that we were  developing and take ownership of quality all in all. We wanted to do 80% of the testing automatically while covering the manual in the left 20%. I had a budget to recruit test automation engineer of junior to mid level.</p>
+
+<p>How do you recruit a good junior engineer? You are looking for a potential which you need to find and validate by testing it. So I composed a simple exercise for test automation position interview. I gave it as homework after meeting a potential candidate which passed the initial screening.</p>
+
+<p>I thought that it would be a nice exercise to use some SaaS tools to check our company website contact form. I choose to use <a href="https://saucelabs.com">Saucelabs</a> for test automation code execution in the cloud using Selenium web driver and <a href="https://loader.io">Loader</a> to do the load test.</p>
+
+<p>I tried to make the test work myself, before I give this exercise for candidate, to make sure that it&#8217;s possible and to learn the field myself to feel more eligible. (I never did test automation before)</p>
+
+<p>The main purpose of the exercise was to see how candidate can learn and deal with new tools, use them to write automation and summarize all his work in a document describing what and why it was done.</p>
+
+<p>I sent the exercise as homework to few candidates asking them to send me results in 24 hours, including the test automation source code and document explaining the services and the work that was done.</p>
+
+<p>Eventually I found this approach of testing candidates very effective. You could see weak candidates return partial test results or not returning results of tests at all. Strong candidates asked question and tried to accomplish the mission in the best way. Some even found bugs in our contact form by running their unique tests. :)</p>
+
+<p>Hope you find it interesting. If you have any question, let me know.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[bash tips]]></title>
@@ -809,30 +840,6 @@ If you have more tips &amp; tricks to add to the list, please leave in comments.
 
 
 <p> <p><a href="http://vimeo.com/77674916">Re-Culturing a 200 employee start-up - David Virtser and Dvir Greenberg</a> from <a href="http://vimeo.com/devopsdays">devopsdays</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Re-culturing a 200 employees startup]]></title>
-    <link href="http://virtser.net/2013/10/02/re-culturing-a-200-employees-start-up/"/>
-    <updated>2013-10-02T19:52:00+03:00</updated>
-    <id>http://virtser.net/2013/10/02/re-culturing-a-200-employees-start-up</id>
-    <content type="html"><![CDATA[<p><a href="http://devopsdays.org/events/2013-telaviv/">DevOpsDays TLV</a> conference is over and it was awesome! Learned a lot, listen to some very cool presentations, met new people and even give a talk!</p>
-
-<p>I&#8217;m not the guy for great speeches, but still it was an amazing experience for me. People asked questions and was interested in the process we are running. We tried to be as open and transparent as possible, showing the good and bad things in the process. I hope it worked and we will be able to help others to kick-off the process in their organizations.  Will be happy to get your feedback.</p>
-
-<p>Find below the slides from our presentation about DevOps implementation in <a href="http://www.etoro.com">eToro</a>:</p>
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/26739176?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-
-
-<p></p>
-
-<p>Composed and presented by Dvir Greenberg and David Virtser.</p>
-
-<p>If you have some questions or want to talk about DevOps implementation process in medium size organization, don&#8217;t hesitate to contact me.</p>
-
-<p>Our speech recording will follow.</p>
 ]]></content>
   </entry>
   
