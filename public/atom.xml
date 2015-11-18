@@ -4,11 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-<<<<<<< HEAD
-  <updated>2015-11-18T22:04:17+02:00</updated>
-=======
-  <updated>2015-05-13T12:33:22+03:00</updated>
->>>>>>> a80ed3014f7df78f535aed8ea52f2477cbaf360f
+  <updated>2015-11-18T22:09:39+02:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -18,7 +14,6 @@
 
   
   <entry>
-<<<<<<< HEAD
     <title type="html"><![CDATA[Grunt running from root directory]]></title>
     <link href="http://virtser.net/2015/11/18/grunt-running-from-root-directory/"/>
     <updated>2015-11-18T21:46:00+02:00</updated>
@@ -74,7 +69,10 @@
 
 <p>That&#8217;s it, pretty simple.
 Hope you like it and use it.</p>
-=======
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[How I recruited test automation engineer]]></title>
     <link href="http://virtser.net/2015/05/13/how-i-recruited-test-automation-engineer/"/>
     <updated>2015-05-13T11:20:00+03:00</updated>
@@ -188,7 +186,6 @@ alias s=&#8217;http-server -o -cors&#8217;</strong></p>
 
 <p>Hope you liked it.
 If you have more tips to share, please do.</p>
->>>>>>> a80ed3014f7df78f535aed8ea52f2477cbaf360f
 ]]></content>
   </entry>
   
@@ -891,62 +888,4 @@ If you have more tips &amp; tricks to add to the list, please leave in comments.
 ]]></content>
   </entry>
   
-  <entry>
-    <title type="html"><![CDATA[Re-Culturing a 200 employees Start-Up Video]]></title>
-    <link href="http://virtser.net/2013/10/25/re-culturing-a-200-employees-start-up-video/"/>
-    <updated>2013-10-25T15:51:00+03:00</updated>
-    <id>http://virtser.net/2013/10/25/re-culturing-a-200-employees-start-up-video</id>
-    <content type="html"><![CDATA[<p>Our talk with Dvir Greenberg for DevOpsDays TLV 2013 conference:</p>
-
-<iframe src="http://virtser.net//player.vimeo.com/video/77674916?title=0" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-<p> <p><a href="http://vimeo.com/77674916">Re-Culturing a 200 employee start-up - David Virtser and Dvir Greenberg</a> from <a href="http://vimeo.com/devopsdays">devopsdays</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
-]]></content>
-  </entry>
-  
-<<<<<<< HEAD
-  <entry>
-    <title type="html"><![CDATA[Re-culturing a 200 employees startup]]></title>
-    <link href="http://virtser.net/2013/10/02/re-culturing-a-200-employees-start-up/"/>
-    <updated>2013-10-02T19:52:00+03:00</updated>
-    <id>http://virtser.net/2013/10/02/re-culturing-a-200-employees-start-up</id>
-    <content type="html"><![CDATA[<p><a href="http://devopsdays.org/events/2013-telaviv/">DevOpsDays TLV</a> conference is over and it was awesome! Learned a lot, listen to some very cool presentations, met new people and even give a talk!</p>
-
-<p>I&#8217;m not the guy for great speeches, but still it was an amazing experience for me. People asked questions and was interested in the process we are running. We tried to be as open and transparent as possible, showing the good and bad things in the process. I hope it worked and we will be able to help others to kick-off the process in their organizations.  Will be happy to get your feedback.</p>
-
-<p>Find below the slides from our presentation about DevOps implementation in <a href="http://www.etoro.com">eToro</a>:</p>
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/26739176?rel=0" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-
-
-<p></p>
-
-<p>Composed and presented by Dvir Greenberg and David Virtser.</p>
-
-<p>If you have some questions or want to talk about DevOps implementation process in medium size organization, don&#8217;t hesitate to contact me.</p>
-
-<p>Our speech recording will follow.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[eToro DevOps Progress]]></title>
-    <link href="http://virtser.net/2013/09/19/etoro-devops-progress/"/>
-    <updated>2013-09-19T14:01:00+03:00</updated>
-    <id>http://virtser.net/2013/09/19/etoro-devops-progress</id>
-    <content type="html"><![CDATA[<p>A little spoiler for our <a href="http://devopsdays.org/events/2013-telaviv/">DevOpsDays TLV</a> presentation which is going to take place 30 Sep - 01 Oct. :)</p>
-
-<p>I want to share with you one slide of eToro DevOps progress in the last 4 months:</p>
-
-<p><img src="http://virtser.net/images/devopsprogress.png" alt="" /></p>
-
-<p>I know it&#8217;s not much, but considering our current size and cultural gaps we had, I&#8217;m very satisfied!</p>
-
-<p>Only this month we finally completed the recruitment of DevOps team.</p>
-]]></content>
-  </entry>
-  
-=======
->>>>>>> a80ed3014f7df78f535aed8ea52f2477cbaf360f
 </feed>
