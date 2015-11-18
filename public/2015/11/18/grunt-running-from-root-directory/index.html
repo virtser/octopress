@@ -1,0 +1,207 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Grunt running from root directory - David Virtser</title>
+	<meta name="author" content="David Virtser">
+
+	
+	<meta name="description" content="Nov 18th, 2015 Grunt Running From Root Directory If you are a web developer and you are using Grunt as your default task runner, you probably in &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="http://feeds.feedburner.com/poisonsblog" rel="alternate" title="David Virtser" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://virtser.net/2015/11/18/grunt-running-from-root-directory/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		document.write("<a href='/'><img src='http://www.gravatar.com/avatar/" + MD5("poison77@gmail.com") + "?s=160' alt='David Virtser' style='width: 160px;' /></a>");
+	</script>
+</div>
+<h1><a href="/">David Virtser</a></h1>
+<p class="subtitle"></p>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/about">About me</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/poison_dv" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/virtser" title="GitHub">GitHub</a>
+		
+		
+		<a class="linkedin" href="http://www.linkedin.com/in/virtser">LinkedIn</a>
+		
+		
+		
+		
+		
+		<a class="rss" href="http://feeds.feedburner.com/poisonsblog" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-11-18T21:46:00+02:00" data-updated="true" itemprop="datePublished">Nov 18<span>th</span>, 2015</time></div>
+	</div>
+	<h1 class="title" itemprop="name">Grunt Running From Root Directory</h1>
+	<div class="entry-content" itemprop="articleBody"><p><img src="http://gruntjs.com/img/grunt-logo.png" alt="" /></p>
+
+<p>If you are a web developer and you are using <a href="http://gruntjs.com/">Grunt</a> as your default task runner, you probably in most of the cases use it from some inner folder of the project, something like &#8221;<em>client/app</em>&#8221;.</p>
+
+<p>In this case, every time you want to work on your code using command like &#8221;<em>grunt serve</em>&#8221;, you need to change directory into <em>client/app</em> to run it all the time.</p>
+
+<p>Below, I show you the way to make grunt commands work from root directory which makes your life more comfortable, eliminating the need switching to <em>client/app</em> directory all the time.</p>
+
+<ol>
+<li>Add in your original <em>client/app/Gruntfile.js</em> file the following code to let Grunt know the base directory location:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>module.exports = function(grunt) {
+</span><span class='line'>  // Must have in order to work from root
+</span><span class='line'>  grunt.file.setBase(__dirname);
+</span><span class='line'>
+</span><span class='line'>  ...
+</span><span class='line'>
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2.. Add symbolic link in your root directory to original <em>client/app/Gruntfile.js</em> file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ln -s client/app/Gruntfile.js Gruntfile.js</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3.. Create <em>package.json</em> in root directory with grunt as dependency and install Grunt:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm init
+</span><span class='line'>npm install grunt --save-dev</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4.. Run grunt from root to test it.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>grunt serve</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&#8217;s it, pretty simple.
+Hope you like it and use it.</p>
+</div>
+
+</article>
+
+	
+
+
+<section id="comment">
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+			</div>
+			<footer id="footer" class="inner"></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'virtserdavid';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://virtser.net/2015/11/18/grunt-running-from-root-directory/';
+        var disqus_url = 'http://virtser.net/2015/11/18/grunt-running-from-root-directory/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29241929-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+		</div>
+	</div>
+</body>
+</html>

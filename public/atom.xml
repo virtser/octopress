@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2015-04-03T14:14:41+03:00</updated>
+  <updated>2015-11-18T22:04:17+02:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Grunt running from root directory]]></title>
+    <link href="http://virtser.net/2015/11/18/grunt-running-from-root-directory/"/>
+    <updated>2015-11-18T21:46:00+02:00</updated>
+    <id>http://virtser.net/2015/11/18/grunt-running-from-root-directory</id>
+    <content type="html"><![CDATA[<p><img src="http://gruntjs.com/img/grunt-logo.png" alt="" /></p>
+
+<p>If you are a web developer and you are using <a href="http://gruntjs.com/">Grunt</a> as your default task runner, you probably in most of the cases use it from some inner folder of the project, something like &#8221;<em>client/app</em>&#8221;.</p>
+
+<p>In this case, every time you want to work on your code using command like &#8221;<em>grunt serve</em>&#8221;, you need to change directory into <em>client/app</em> to run it all the time.</p>
+
+<p>Below, I show you the way to make grunt commands work from root directory which makes your life more comfortable, eliminating the need switching to <em>client/app</em> directory all the time.</p>
+
+<ol>
+<li>Add in your original <em>client/app/Gruntfile.js</em> file the following code to let Grunt know the base directory location:</li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>module.exports = function(grunt) {
+</span><span class='line'>  // Must have in order to work from root
+</span><span class='line'>  grunt.file.setBase(__dirname);
+</span><span class='line'>
+</span><span class='line'>  ...
+</span><span class='line'>
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>2.. Add symbolic link in your root directory to original <em>client/app/Gruntfile.js</em> file:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ln -s client/app/Gruntfile.js Gruntfile.js</span></code></pre></td></tr></table></div></figure>
+
+
+<p>3.. Create <em>package.json</em> in root directory with grunt as dependency and install Grunt:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm init
+</span><span class='line'>npm install grunt --save-dev</span></code></pre></td></tr></table></div></figure>
+
+
+<p>4.. Run grunt from root to test it.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>grunt serve</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&#8217;s it, pretty simple.
+Hope you like it and use it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iVote]]></title>
@@ -764,20 +823,6 @@ If you have more tips &amp; tricks to add to the list, please leave in comments.
 <p>I know it&#8217;s not much, but considering our current size and cultural gaps we had, I&#8217;m very satisfied!</p>
 
 <p>Only this month we finally completed the recruitment of DevOps team.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Continuous Delivery Vision]]></title>
-    <link href="http://virtser.net/2013/08/14/continuous-delivery-vision/"/>
-    <updated>2013-08-14T19:27:00+03:00</updated>
-    <id>http://virtser.net/2013/08/14/continuous-delivery-vision</id>
-    <content type="html"><![CDATA[<p>Find below a presentation of eToro Continuous Delivery vision as recently composed and presented by our CD leader <a href="https://twitter.com/alonbecker">Alon Becker</a>.</p>
-
-<iframe src="http://prezi.com/embed/kinvydtyaj4p/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="600" height="400" frameBorder="0"></iframe>
-
-
-<p>We still have a very long way full of challenges in front of us to get to CD, but the train left a station…</p>
 ]]></content>
   </entry>
   
