@@ -1,0 +1,42 @@
+---
+layout: post
+title: "bash tips"
+date: 2015-05-12 11:14
+comments: true
+published: true
+---
+
+![](/images/bash.jpg)
+
+I wanted to share few Linux bash (terminal) tips I found to be useful for me over the last year.
+
+#1. Commands
+**cd -** goes back to previous directory you have been at. useful when you accidentally switch to root dir for example.<br/>
+**!!** - repeats your last command. most useful if you forgot to add sudo to last command: sudo !!<br/>
+**fuser -k tcp/8080** - to find and kill a process which is using port 8080.<br/>
+**history**  - shows you the history of commands you executed)<br/>
+**history | grep 'git'**  - will show you all the history items with word 'git' in it
+
+And now try **Ctrl-R** in terminal to open history search and type the desired search pattern.
+
+I'm sure you know that **Ctrl-C** cancels a process execution. Did you also know that **Ctrl-Z** pauses a process by putting it in background and releasing a prompt for you? To bring back the paused process type **fg** (ForeGround).
+
+#2. Aliases
+You can also set some aliases for your most used commands in **~/.bashrc** file:
+
+My aliases are:
+
+**alias ll='ls -alF'<br/>
+alias la='ls -A'<br/>
+alias l='ls -CF'<br/>
+alias cd..="cd .."<br/>
+alias node='nodejs'<br/>
+alias s='http-server -o -cors'**
+
+#3. Prompt 
+As well as define custom prompt colors and git branch you are working on, like I have for example:
+
+![](/images/bash2.png)
+
+More details on how to do it [here](http://code-worrier.com/blog/git-branch-in-bash-prompt). 
+

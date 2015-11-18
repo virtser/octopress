@@ -7,7 +7,11 @@
 	<meta name="author" content="David Virtser">
 
 	
+<<<<<<< HEAD
 	<meta name="description" content="Nov 18th, 2015 Grunt Running From Root Directory If you are a web developer and you are using Grunt as your default task runner, you probably in &hellip;">
+=======
+	<meta name="description" content="May 13th, 2015 How I Recruited Test Automation Engineer Before we begin, I just want to make sure that we are on the same page about what is &#8220; &hellip;">
+>>>>>>> a80ed3014f7df78f535aed8ea52f2477cbaf360f
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,6 +100,7 @@
   
 
 
+<<<<<<< HEAD
 <time datetime="2015-11-18T21:46:00+02:00" data-updated="true" itemprop="datePublished">Nov 18<span>th</span>, 2015</time></div>
 		
 	</div>
@@ -152,6 +157,160 @@
 
 <p>That&#8217;s it, pretty simple.
 Hope you like it and use it.</p>
+=======
+<time datetime="2015-05-13T11:20:00+03:00" data-updated="true" itemprop="datePublished">May 13<span>th</span>, 2015</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2015/05/13/how-i-recruited-test-automation-engineer/" itemprop="url">How I Recruited Test Automation Engineer</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="/images/test_automation.jpg" alt="" /></p>
+
+<p>Before we begin, I just want to make sure that we are on the same page about what is  &#8220;Test Automation&#8221;. For me, it is a way to automatically validate that a real user experiencing the predicted application behaviour. For example: User click on a button which should open a new window. In this case we need to automatically validate that user is able to click a button and a window will show up with predefined text. <a href="http://en.wikipedia.org/wiki/Test_automation">Wikipedia: Test automation</a></p>
+
+<p>Ideally, I wouldn&#8217;t recruit a test automation engineer at all. I beleive that software engineers should be capable to test their own code (as part of &#8221;<a href="http://en.wikipedia.org/wiki/Eating_your_own_dog_food">eat your own dog food</a>&#8221; concept) by writing unit, integration or end to end tests. It makes even a higher level of bond to the code that you are developing and need to maintain in the future.</p>
+
+<p>But in reality, there are many reasons that might prevent you from living without QA position at all. It could be a culture of the organization that you are working in, legacy code that you need to deal with, could be the product nature that you are developing and etc&#8230; Moreover, you might need someone to own quality control in your organization.</p>
+
+<p>My team was missing a QA person to take control of the product quality that we were  developing and take ownership of quality all in all. We wanted to do 80% of the testing automatically while covering the manual in the left 20%. I had a budget to recruit test automation engineer of junior to mid level.</p>
+
+<p>How do you recruit a good junior engineer? You are looking for a potential which you need to find and validate by testing it. So I composed a simple exercise for test automation position interview. I gave it as homework after meeting a potential candidate which passed the initial screening.</p>
+
+<p>I thought that it would be a nice exercise to use some SaaS tools to check our company website contact form. I choose to use <a href="https://saucelabs.com">Saucelabs</a> for test automation code execution in the cloud using Selenium web driver and <a href="https://loader.io">Loader</a> to do the load test.</p>
+
+<p>I tried to make the test work myself, before I give this exercise for candidate, to make sure that it&#8217;s possible and to learn the field myself to feel more eligible. (I never did test automation before)</p>
+
+<p>The main purpose of the exercise was to see how candidate can learn and deal with new tools, use them to write automation and summarize all his work in a document describing what and why it was done.</p>
+
+<p>I sent the exercise as homework to few candidates asking them to send me results in 24 hours, including the test automation source code and document explaining the services and the work that was done.</p>
+
+<p>Eventually I found this approach of testing candidates very effective. You could see weak candidates return partial test results or not returning results of tests at all. Strong candidates asked question and tried to accomplish the mission in the best way. Some even found bugs in our contact form by running their unique tests. :)</p>
+
+<p>Hope you find it interesting. If you have any question, let me know.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-12T11:14:00+03:00" data-updated="true" itemprop="datePublished">May 12<span>th</span>, 2015</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2015/05/12/bash-tips/" itemprop="url">Bash Tips</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="/images/bash.jpg" alt="" /></p>
+
+<p>I wanted to share few Linux bash (terminal) tips I found to be useful for me over the last year.</p>
+
+<h1>1. Commands</h1>
+
+<p><strong>cd -</strong> goes back to previous directory you have been at. useful when you accidentally switch to root dir for example.<br/>
+<strong>!!</strong> - repeats your last command. most useful if you forgot to add sudo to last command: sudo !!<br/>
+<strong>fuser -k tcp/8080</strong> - to find and kill a process which is using port 8080.<br/>
+<strong>history</strong>  - shows you the history of commands you executed)<br/>
+<strong>history | grep &#8216;git&#8217;</strong>  - will show you all the history items with word &#8216;git&#8217; in it</p>
+
+<p>And now try <strong>Ctrl-R</strong> in terminal to open history search and type the desired search pattern.</p>
+
+<p>I&#8217;m sure you know that <strong>Ctrl-C</strong> cancels a process execution. Did you also know that <strong>Ctrl-Z</strong> pauses a process by putting it in background and releasing a prompt for you? To bring back the paused process type <strong>fg</strong> (ForeGround).</p>
+
+<h1>2. Aliases</h1>
+
+<p>You can also set some aliases for your most used commands in <strong>~/.bashrc</strong> file:</p>
+
+<p>My aliases are:</p>
+
+<p><strong>alias ll=&#8217;ls -alF&#8217;<br/>
+alias la=&#8217;ls -A&#8217;<br/>
+alias l=&#8217;ls -CF&#8217;<br/>
+alias cd..=&#8221;cd ..&#8221;<br/>
+alias node=&#8217;nodejs&#8217;<br/>
+alias s=&#8217;http-server -o -cors&#8217;</strong></p>
+
+<h1>3. Prompt</h1>
+
+<p>As well as define custom prompt colors and git branch you are working on, like I have for example:</p>
+
+<p><img src="/images/bash2.png" alt="" /></p>
+
+<p>More details on how to do it <a href="http://code-worrier.com/blog/git-branch-in-bash-prompt">here</a>.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-04-19T19:15:00+03:00" data-updated="true" itemprop="datePublished">Apr 19<span>th</span>, 2015</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2015/04/19/jasmine-testing-tips/" itemprop="url">Jasmine Testing Tips</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>If you are developing web application and you are working on client side, I hope you write unit tests or test automation or even both like we do. The following tips might be helpful if you write your tests using <a href="http://jasmine.github.io/">Jasmine</a> and execute it with <a href="http://karma-runner.github.io/">Karma</a> or <a href="http://angular.github.io/protractor/">Protractor</a>.</p>
+
+<p>I guess you already know that if you want to disable a specific test you can add &#8220;x&#8221; before <em>describe</em> or <em>it</em> statements?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>xdescribe('my beautiful function', function() {
+</span><span class='line'> xit('having fun', function() {
+</span><span class='line'>
+</span><span class='line'> });
+</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Did you also know that if you add &#8220;d&#8221; before <em>describe</em> or &#8220;i&#8221; before <em>it</em>, it will run only this specific test and skip the others?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ddescribe('my beautiful function', function() {
+</span><span class='line'> iit('having fun', function() {
+</span><span class='line'>
+</span><span class='line'> });
+</span><span class='line'>});</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is especially helpful when you need to focus on debugging specific test.</p>
+
+<p>Hope you liked it.
+If you have more tips to share, please do.</p>
+>>>>>>> a80ed3014f7df78f535aed8ea52f2477cbaf360f
 
 		
 		
@@ -457,6 +616,7 @@ The only valid measurement of code quality: WTFs/minute.</p>
 
 </article>
 
+<<<<<<< HEAD
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="meta">
@@ -520,6 +680,8 @@ The only valid measurement of code quality: WTFs/minute.</p>
 
 </article>
 
+=======
+>>>>>>> a80ed3014f7df78f535aed8ea52f2477cbaf360f
 </div>
 <nav id="pagenavi">
     
