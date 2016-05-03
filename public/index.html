@@ -7,7 +7,7 @@
 	<meta name="author" content="David Virtser">
 
 	
-	<meta name="description" content="Nov 18th, 2015 Grunt Running From Root Directory If you are a web developer and you are using Grunt as your default task runner, you probably in &hellip;">
+	<meta name="description" content="May 3rd, 2016 Better Dependencies Management for a Team When you are like me working in a team of web engineers, on a project which involves usage &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,53 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-05-03T20:07:00+03:00" data-updated="true" itemprop="datePublished">May 3<span>rd</span>, 2016</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2016/05/03/better-dependencies-management-for-a-team/" itemprop="url">Better Dependencies Management for a Team</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="https://cdn-images-1.medium.com/max/800/1*R9aL9QgxtcS_lXOcXODvSw.jpeg" alt="" /></p>
+
+<p>When you are like me working in a team of web engineers, on a project which involves usage of external 3rd party libraries and you are using <a href="https://www.npmjs.com/"><em>npm</em></a> and/or <a href="http://bower.io/"><em>bower</em></a> to manage those dependencies, you probably will find it useful.</p>
+
+<h2>The problem:</h2>
+
+<p>When you are working in a team and you are not keeping the 3rd party dependencies as part of your repository. Someone decides to add/remove/upgrade some dependency, they modify <em>package.json</em> or <em>bower.json</em> files reflecting the change and submits the change into repository.</p>
+
+<p>Now you pull those changes into your local copy of the project and unless you run manually <em>npm install</em> and <em>bower install</em> you won’t have those dependencies updated for you locally. Which in most cases result to build/run errors or inconsistency.</p>
+
+<h2>The solution:</h2>
+
+<p>As we are working with <a href="http://gruntjs.com/">grunt</a>, I wrote a small <a href="https://www.npmjs.com/package/grunt-local-deps-update">grunt task</a> which helps detect and update dependencies if <em>package.json</em> or <em>bower.json</em> files version was changed.</p>
+
+<p>So from now on, when someone changes a dependency and bumps npm/bower version, grunt task will automatically update every team member local dependencies.</p>
+
+<p>Which eliminates notifications, questions and increases productivity. :)</p>
+
+<p>Feel free to use it: <br/>
+<a href="https://www.npmjs.com/package/grunt-local-deps-update">https://www.npmjs.com/package/grunt-local-deps-update</a></p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -524,65 +571,6 @@ The only valid measurement of code quality: WTFs/minute.</p>
 
 
 <p>Let me know what you think and if you have some other findings.</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-09-11T12:10:00+03:00" data-updated="true" itemprop="datePublished">Sep 11<span>th</span>, 2014</time></div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2014/09/11/learning-client-side-development/" itemprop="url">Learning Client Side Development</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><img src="http://bit.ly/1qIyl56" alt="" /></p>
-
-<p>Writing this post of good learning resources as a reference for myself.</p>
-
-<p>The purpose is to refresh a memory, skills and get updated with latest technologies like  HTML5, CSS3 and AngularJS.</p>
-
-<h2>HTML, CSS and JavaScript</h2>
-
-<ul>
-<li><a href="http://www.htmldog.com/guides/html/beginner/">HTML Dog&#8217;s HTML Beginner Tutorial</a></li>
-<li><a href="http://diveintohtml5.info/">DIVE INTO HTML5</a></li>
-<li><a href="http://learnlayout.com/">Learn CSS layout</a></li>
-<li><a href="https://www.bloc.io/build-your-first-website-with-html-and-css">Bloc&#8217;s Build Your First Website: A Crash Course in HTML and CSS</a></li>
-<li><a href="http://learn.shayhowe.com/html-css/">Shay Howe&#8217;s Learn to Code HTML &amp; CSS</a></li>
-<li><a href="https://dash.generalassemb.ly/">Dash by General Assembly</a></li>
-<li><a href="http://www.codecademy.com">Codecademy</a> - lots of great courses on HTML, CSS, Javascript, JQuery.</li>
-</ul>
-
-
-<h2>AngularJS</h2>
-
-<ul>
-<li><a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro">Learn to build an application using Angular.js
-</a></li>
-<li><a href="https://docs.angularjs.org/tutorial">PhoneCat Tutorial App</a> official Google tutorial.</li>
-<li><a href="https://thinkster.io/angulartutorial/a-better-way-to-learn-angularjs/">A Better Way to Learn AngularJS</a> by thinkster.</li>
-<li><a href="https://egghead.io/articles/new-to-angularjs-start-learning-here">New to AngularJS? Start learning here
-</a> by egghead.</li>
-</ul>
-
-
-<p>Feel free to suggest other resources.</p>
 
 		
 		
