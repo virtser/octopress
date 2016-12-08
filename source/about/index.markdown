@@ -7,7 +7,9 @@ sharing: false
 footer: true
 ---
 
-Currently working at [Spectory](http://www.spectory.com/en) as software engineering team lead on a very interesting project for Google. The challenge there is to form a new team from scratch and build a new strategic product.
+Currently working at young startup called [dorbel](https://www.dorbel.com) as VP R&D, building engineering team and product from scratch. Huge challenge!
+
+Previously was working at [Spectory](http://www.spectory.com/en) as software engineering team lead on a very interesting project for Google. The challenge there was to form a new team from scratch and build a new strategic product.
 
 Before that I worked at [eToro](http://etoro.com) as Infrastructure group leader, trying to hack the growth of eToro R&D with my team, optimize it, make it faster, make it scalable, work in DevOps culture. I used to manage number of R&D teams and was web developer at my past. 
 
