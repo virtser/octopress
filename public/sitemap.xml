@@ -137,6 +137,12 @@
         <lastmod>2016-05-04T01:07:04+03:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://virtser.net/2017/05/25/modern-dev-slash-test-slash-prod-environments-using-docker-compose/
+        </loc>
+        <lastmod>2017-05-25T21:29:00+03:00</lastmod>
+    </url>
+    <url>
         <loc>http://virtser.net/404.html</loc>
         <lastmod>2013-04-27T17:51:52+03:00</lastmod>
     </url>
@@ -146,11 +152,11 @@
     </url>
     <url>
         <loc>http://virtser.net/archives/</loc>
-        <lastmod>2016-05-04T01:07:04+03:00</lastmod>
+        <lastmod>2017-05-25T21:29:00+03:00</lastmod>
     </url>
     <url>
         <loc>http://virtser.net/</loc>
-        <lastmod>2016-05-04T01:07:04+03:00</lastmod>
+        <lastmod>2017-05-25T21:29:00+03:00</lastmod>
     </url>
     <url>
         <loc>http://virtser.net/projects/</loc>

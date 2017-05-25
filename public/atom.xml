@@ -4,7 +4,7 @@
   <title><![CDATA[David Virtser]]></title>
   <link href="http://virtser.net/atom.xml" rel="self"/>
   <link href="http://virtser.net/"/>
-  <updated>2016-12-08T22:38:34+02:00</updated>
+  <updated>2017-05-25T21:29:26+03:00</updated>
   <id>http://virtser.net/</id>
   <author>
     <name><![CDATA[David Virtser]]></name>
@@ -12,6 +12,85 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Modern dev/test/prod environments using Docker Compose]]></title>
+    <link href="http://virtser.net/2017/05/25/modern-dev-slash-test-slash-prod-environments-using-docker-compose/"/>
+    <updated>2017-05-25T21:24:00+03:00</updated>
+    <id>http://virtser.net/2017/05/25/modern-dev-slash-test-slash-prod-environments-using-docker-compose</id>
+    <content type="html"><![CDATA[<p><img src="https://cdn-images-1.medium.com/max/800/1*s8I4jBW2KKP687LqWh3OtQ.png" alt="" /></p>
+
+<p>There is like thousands of post talking about what is Docker and how to start
+working with it, but there is no much posts explaining simply the motivation
+behind it. So I decided to write one, as I see it.</p>
+
+<p>I think its much more important to understand <strong>why</strong> than technical details of
+<strong>how</strong>. When you understand <strong>why</strong>, you have the motivation to learn <strong>how</strong>.</p>
+
+<p>OK, let’s remind ourselves first about the old habits of how we used to work.
+This to get a better reference of the problem.</p>
+
+<p>We used to create dev/test/prod environments manually. It could work when your
+team and environment are small. When team grows and you have to share those
+dev/test environments, things start to go out of control. Such environments
+aren’t isolated and become inconsistent over time.</p>
+
+<p>In many cases, those environments are not identical to production environment,
+running on different machines or have different network/security conditions.
+Which all resulting in unexpected bugs on production.</p>
+
+<p>When team and environment grows, engineers can’t keep up with constant changes
+and additions of new components. It become impossible to install manually on
+your local machine another dependency. This leads to creative solutions like
+using some API/cache/db from another environment. 💩</p>
+
+<p>This is where Docker will shine by turning your environment services
+infrastructure into code. Which will be predictable, repeatable and consistent
+between your engineers dev, your CI test and your production environments.</p>
+
+<h3>Docker</h3>
+
+<p>Let’s start with <strong>Docker</strong>, which is the basis for everything. It takes some
+time to grasp the concept and how to work with it, like with any abstraction.
+But believe me it’s worth it.</p>
+
+<p>Docker is using Linux core without need of creating virtual machines for each
+container (service). As a result the best option as developer machine would be
+Linux. Docker can run on Mac as well, but will require more resources to create
+Docker virtual machine space. Sorry, I can’t provide any feedback regarding
+working with Docker in Windows OS as I never tried it. (If you did, please share
+your experience in comments)</p>
+
+<p>What does Docker container represent? A container is a single instance of one
+component in your environment. Component can be for example web application,
+API, worker, cache, database, or others.</p>
+
+<p>What you define in service Docker file is which OS image to use as your
+baseline, how to enrich it with your service dependencies, where to copy your
+code from and how to run the service.</p>
+
+<h3>Docker Compose</h3>
+
+<p>Docker is nice when you want to spin up a single app/service. What makes it
+really powerful is <strong>Docker Compose</strong> which creates a composition of Docker
+containers that eventually represent your real application dev/test/prod
+environment.</p>
+
+<p>Docker composition describes the relationship between your services. Their
+volumes, networks, links, configuration, etc..</p>
+
+<p>It allows you to spin up the whole sandbox environment of services on your
+machine. Fully isolated, your own environment. ☺</p>
+
+<p>I think that’s all you need to know to get the motivation to learn how to build
+Docker containers and work with Composition.</p>
+
+<p>If I could explain it simply, as next step, I suggest to follow <a href="https://docs.docker.com/learn/">Docker
+documentation</a>.</p>
+
+<p>Good luck!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Better dependencies management for a team]]></title>
@@ -743,33 +822,6 @@ public sealed class GraphiteTimingAttribute : OnMethodBoundaryAspect
 <li><p>Communication and follow up of progress are important to make the development and migration as fast as possible. You don&#8217;t want this project to take a lifetime.</p></li>
 </ol>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Focus]]></title>
-    <link href="http://virtser.net/2014/01/22/focus/"/>
-    <updated>2014-01-22T16:00:00+02:00</updated>
-    <id>http://virtser.net/2014/01/22/focus</id>
-    <content type="html"><![CDATA[<p><img src="http://virtser.net/images/focus.jpg" alt="" /></p>
-
-<p>Lets talk about Focus and its importance in our life. Bear with me.</p>
-
-<p>I recently spent few hour of my time explaining to my colleagues from <a href="http://www.etoro.com/">eToro</a> broad management about how important is to make a focus. Many times, as a startup, we tempted to join a new venture or not to loose another opportunity of business development.</p>
-
-<p>Today, when we are not a startup company anymore, these temptations became a solid products which are not a core of our business and they defocus us from the real product. We have less time to invest to make our main product better because we have to support the other products which became not important anymore.</p>
-
-<p>For example, historically we developed support for many types of payments and we keep on supporting all of them because some users want them. But instead, if we choose to support only Credit Card and PayPal, but do it good, even perfect, we could generate the same amount of volume if not even more!</p>
-
-<p>If we build a good product, people will use it. Lets make such product, so even customers who have no Credit Card or PayPal account will want to create one just in order to try our product. Just like I did this week with <a href="netflix.com">Netflix</a>, which is available for U.S. customers only. I opened a US PayPal account and bought a US VPN to have US IP address and now I watch Netflix in my TV with <a href="http://www.google.com/intl/en/chrome/devices/chromecast/">Chromecast</a>. This is because they built amazing product!</p>
-
-<p>So I spoke with about 10 people from company broad management about focus and how we can say NO to things which are not important. I hope that I could transfer the message.</p>
-
-<p>Meanwhile I succeed myself to push and shut down few legacy products which were running for a long time on background and nobody thought to stop them. I also was involved in &#8220;not starting&#8221; a new products initiative which are not in our main business and I&#8217;m proud of it. Unfortunately some people take this initiative personally, but these are not my intentions.</p>
-
-<p><strong>Say NO</strong>! It is more important to say what you are not doing than what you are doing, define non-goals. Make a focus on stuff that really matters, the deal breakers, the stuff that are core of your business. If you can use SaaS services, use them, don&#8217;t build it yourself. And of course you can apply this rule not just in your work, but in your real life.</p>
-
-<blockquote><p>“People think focus means saying yes to the thing you&#8217;ve got to focus on. But that&#8217;s not what it means at all. It means saying no to the hundred other good ideas that there are. You have to pick carefully. I&#8217;m actually as proud of the things we haven&#8217;t done as the things I have done. Innovation is saying no to 1,000 things.” &#8211; Steve Jobs</p></blockquote>
 ]]></content>
   </entry>
   

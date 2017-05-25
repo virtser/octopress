@@ -7,7 +7,7 @@
 	<meta name="author" content="David Virtser">
 
 	
-	<meta name="description" content="May 3rd, 2016 Better Dependencies Management for a Team When you are like me working in a team of web engineers, on a project which involves usage &hellip;">
+	<meta name="description" content="May 25th, 2017 Modern Dev/test/prod Environments Using Docker Compose There is like thousands of post talking about what is Docker and how to start &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +80,104 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-05-25T21:24:00+03:00" data-updated="true" itemprop="datePublished">May 25<span>th</span>, 2017</time></div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/2017/05/25/modern-dev-slash-test-slash-prod-environments-using-docker-compose/" itemprop="url">Modern Dev/test/prod Environments Using Docker Compose</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="https://cdn-images-1.medium.com/max/800/1*s8I4jBW2KKP687LqWh3OtQ.png" alt="" /></p>
+
+<p>There is like thousands of post talking about what is Docker and how to start
+working with it, but there is no much posts explaining simply the motivation
+behind it. So I decided to write one, as I see it.</p>
+
+<p>I think its much more important to understand <strong>why</strong> than technical details of
+<strong>how</strong>. When you understand <strong>why</strong>, you have the motivation to learn <strong>how</strong>.</p>
+
+<p>OK, let’s remind ourselves first about the old habits of how we used to work.
+This to get a better reference of the problem.</p>
+
+<p>We used to create dev/test/prod environments manually. It could work when your
+team and environment are small. When team grows and you have to share those
+dev/test environments, things start to go out of control. Such environments
+aren’t isolated and become inconsistent over time.</p>
+
+<p>In many cases, those environments are not identical to production environment,
+running on different machines or have different network/security conditions.
+Which all resulting in unexpected bugs on production.</p>
+
+<p>When team and environment grows, engineers can’t keep up with constant changes
+and additions of new components. It become impossible to install manually on
+your local machine another dependency. This leads to creative solutions like
+using some API/cache/db from another environment. 💩</p>
+
+<p>This is where Docker will shine by turning your environment services
+infrastructure into code. Which will be predictable, repeatable and consistent
+between your engineers dev, your CI test and your production environments.</p>
+
+<h3>Docker</h3>
+
+<p>Let’s start with <strong>Docker</strong>, which is the basis for everything. It takes some
+time to grasp the concept and how to work with it, like with any abstraction.
+But believe me it’s worth it.</p>
+
+<p>Docker is using Linux core without need of creating virtual machines for each
+container (service). As a result the best option as developer machine would be
+Linux. Docker can run on Mac as well, but will require more resources to create
+Docker virtual machine space. Sorry, I can’t provide any feedback regarding
+working with Docker in Windows OS as I never tried it. (If you did, please share
+your experience in comments)</p>
+
+<p>What does Docker container represent? A container is a single instance of one
+component in your environment. Component can be for example web application,
+API, worker, cache, database, or others.</p>
+
+<p>What you define in service Docker file is which OS image to use as your
+baseline, how to enrich it with your service dependencies, where to copy your
+code from and how to run the service.</p>
+
+<h3>Docker Compose</h3>
+
+<p>Docker is nice when you want to spin up a single app/service. What makes it
+really powerful is <strong>Docker Compose</strong> which creates a composition of Docker
+containers that eventually represent your real application dev/test/prod
+environment.</p>
+
+<p>Docker composition describes the relationship between your services. Their
+volumes, networks, links, configuration, etc..</p>
+
+<p>It allows you to spin up the whole sandbox environment of services on your
+machine. Fully isolated, your own environment. ☺</p>
+
+<p>I think that’s all you need to know to get the motivation to learn how to build
+Docker containers and work with Composition.</p>
+
+<p>If I could explain it simply, as next step, I suggest to follow <a href="https://docs.docker.com/learn/">Docker
+documentation</a>.</p>
+
+<p>Good luck!</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -525,52 +623,6 @@ The only valid measurement of code quality: WTFs/minute.</p>
 
 
 <p>To be continued&#8230;</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-09-15T01:23:00+03:00" data-updated="true" itemprop="datePublished">Sep 15<span>th</span>, 2014</time></div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/2014/09/15/what-have-i-learned-from-looking-for-a-new-job/" itemprop="url">What Have I Learned From Looking for a New Job</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><img src="/images/linkedin.png" alt="LinkedIn views chart" /></p>
-
-<p>I left eToro about 2 months ago and started to look for a new challenge. It was my first time actively looking for a job and trying to &#8220;sell&#8221; myself. :)</p>
-
-<p>Below you will find a list of things I learned from the process of looking for a new job:</p>
-
-<ol>
-<li><p>If you can afford it, leave your current job before you found a new one. It gives you more time to look for a new job and you can do it transparently without hiding. That&#8217;s what I did.</p></li>
-<li><p>At the beginning, you have to understand what kind of job and in which type of company you are looking for. This is good for training on your pitch and to make a focus. When you know what you are looking, you can decline job opportunities which looks less appealing for you.</p></li>
-<li><p>Looking for a new job is fun. You have the opportunity to meet a lot of new interesting and sometimes inspiring people. Quit your job now! :)</p></li>
-<li><p>Don&#8217;t trust recruitment agencies. Their recruitment procedures are outdated and not aligned with real market needs. Use social networks and your connections.</p></li>
-<li><p>LinkedIn is working. Add a new company and call it &#8220;Looking for new challenges/opportunities&#8221; in your LinkedIn profile. You will receive 300% increase in profile views and at least one new job opportunity a day in your private inbox.</p></li>
-<li><p>Look for people (team) and culture, but not for product, company or technology stack. You have to work with people at the end of the day.</p></li>
-<li><p>It takes time to open your mind after a long period employed in one place. Meet old friends who were working with you and who you respect, see what they are doing. It will give you more ideas or maybe you can join forces.</p></li>
-<li><p>Learn something new, you have plenty of free time now. Read books you always wanted to read, but couldn&#8217;t do it because you were busy at work. Learn that new technology and hack something. Spare more time with your family, kids, yourself. You won&#8217;t have this time for long.</p></li>
-</ol>
-
-
-<p>Let me know what you think and if you have some other findings.</p>
 
 		
 		

@@ -1,0 +1,227 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Modern dev/test/prod environments using Docker Compose - David Virtser</title>
+	<meta name="author" content="David Virtser">
+
+	
+	<meta name="description" content="May 25th, 2017 Modern Dev/test/prod Environments Using Docker Compose There is like thousands of post talking about what is Docker and how to start &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="http://feeds.feedburner.com/poisonsblog" rel="alternate" title="David Virtser" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://virtser.net/2017/05/25/modern-dev-slash-test-slash-prod-environments-using-docker-compose/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		document.write("<a href='/'><img src='http://www.gravatar.com/avatar/" + MD5("poison77@gmail.com") + "?s=160' alt='David Virtser' style='width: 160px;' /></a>");
+	</script>
+</div>
+<h1><a href="/">David Virtser</a></h1>
+<p class="subtitle"></p>
+<nav id="main-nav"><ul class="main-navigation">
+  <li><a href="/about">About me</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/poison_dv" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/virtser" title="GitHub">GitHub</a>
+		
+		
+		<a class="linkedin" href="http://www.linkedin.com/in/virtser">LinkedIn</a>
+		
+		
+		
+		
+		
+		<a class="rss" href="http://feeds.feedburner.com/poisonsblog" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2017-05-25T21:24:00+03:00" data-updated="true" itemprop="datePublished">May 25<span>th</span>, 2017</time></div>
+	</div>
+	<h1 class="title" itemprop="name">Modern Dev/test/prod Environments Using Docker Compose</h1>
+	<div class="entry-content" itemprop="articleBody"><p><img src="https://cdn-images-1.medium.com/max/800/1*s8I4jBW2KKP687LqWh3OtQ.png" alt="" /></p>
+
+<p>There is like thousands of post talking about what is Docker and how to start
+working with it, but there is no much posts explaining simply the motivation
+behind it. So I decided to write one, as I see it.</p>
+
+<p>I think its much more important to understand <strong>why</strong> than technical details of
+<strong>how</strong>. When you understand <strong>why</strong>, you have the motivation to learn <strong>how</strong>.</p>
+
+<p>OK, let’s remind ourselves first about the old habits of how we used to work.
+This to get a better reference of the problem.</p>
+
+<p>We used to create dev/test/prod environments manually. It could work when your
+team and environment are small. When team grows and you have to share those
+dev/test environments, things start to go out of control. Such environments
+aren’t isolated and become inconsistent over time.</p>
+
+<p>In many cases, those environments are not identical to production environment,
+running on different machines or have different network/security conditions.
+Which all resulting in unexpected bugs on production.</p>
+
+<p>When team and environment grows, engineers can’t keep up with constant changes
+and additions of new components. It become impossible to install manually on
+your local machine another dependency. This leads to creative solutions like
+using some API/cache/db from another environment. 💩</p>
+
+<p>This is where Docker will shine by turning your environment services
+infrastructure into code. Which will be predictable, repeatable and consistent
+between your engineers dev, your CI test and your production environments.</p>
+
+<h3>Docker</h3>
+
+<p>Let’s start with <strong>Docker</strong>, which is the basis for everything. It takes some
+time to grasp the concept and how to work with it, like with any abstraction.
+But believe me it’s worth it.</p>
+
+<p>Docker is using Linux core without need of creating virtual machines for each
+container (service). As a result the best option as developer machine would be
+Linux. Docker can run on Mac as well, but will require more resources to create
+Docker virtual machine space. Sorry, I can’t provide any feedback regarding
+working with Docker in Windows OS as I never tried it. (If you did, please share
+your experience in comments)</p>
+
+<p>What does Docker container represent? A container is a single instance of one
+component in your environment. Component can be for example web application,
+API, worker, cache, database, or others.</p>
+
+<p>What you define in service Docker file is which OS image to use as your
+baseline, how to enrich it with your service dependencies, where to copy your
+code from and how to run the service.</p>
+
+<h3>Docker Compose</h3>
+
+<p>Docker is nice when you want to spin up a single app/service. What makes it
+really powerful is <strong>Docker Compose</strong> which creates a composition of Docker
+containers that eventually represent your real application dev/test/prod
+environment.</p>
+
+<p>Docker composition describes the relationship between your services. Their
+volumes, networks, links, configuration, etc..</p>
+
+<p>It allows you to spin up the whole sandbox environment of services on your
+machine. Fully isolated, your own environment. ☺</p>
+
+<p>I think that’s all you need to know to get the motivation to learn how to build
+Docker containers and work with Composition.</p>
+
+<p>If I could explain it simply, as next step, I suggest to follow <a href="https://docs.docker.com/learn/">Docker
+documentation</a>.</p>
+
+<p>Good luck!</p>
+</div>
+
+</article>
+
+	
+
+
+<section id="comment">
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+			</div>
+			<footer id="footer" class="inner"></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'virtserdavid';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://virtser.net/2017/05/25/modern-dev-slash-test-slash-prod-environments-using-docker-compose/';
+        var disqus_url = 'http://virtser.net/2017/05/25/modern-dev-slash-test-slash-prod-environments-using-docker-compose/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-29241929-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+		</div>
+	</div>
+</body>
+</html>
